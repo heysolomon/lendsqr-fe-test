@@ -42,6 +42,9 @@ const config = {
         primary: '#39CDCC',
         secondary: '#213F7D'
       },
+      dropShadow: {
+        auth: '0px 15px 90px 0px #00000008'
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
