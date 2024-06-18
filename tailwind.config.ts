@@ -36,14 +36,14 @@ const config = {
         'avenir-light': 'var(--font-avenir-light)',
         'avenir-regular': 'var(--font-avenir-regular)',
         'avenir-bold': 'var(--font-avenir-bold)',
-        'work-sans': 'var(--font-works-sans)',
+        'work-sans': 'var(--font-work-sans)',
       },
       colors: {
         primary: '#39CDCC',
         secondary: '#213F7D'
       },
-      dropShadow: {
-        auth: '0px 15px 90px 0px #00000008'
+      boxShadow: {
+        "dash-header:": "3px 0px 20px 0px #0000000A"
       }
     },
   },
