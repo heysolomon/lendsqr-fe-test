@@ -41,9 +41,9 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="grid min-h-screen w-full bg-[#FBFBFB] font-work-sans md:grid-cols-[220px_1fr] lg:grid-cols-[283px_1fr]">
+    <div className="grid h-screen w-full overflow-hidden bg-[#FBFBFB] font-work-sans md:grid-cols-[220px_1fr] lg:grid-cols-[283px_1fr]">
       <Sidebar />
-      <div className="flex flex-col">
+      <div className="flex h-screen flex-col">
         <header className="flex h-14 items-center gap-4 bg-white px-4 shadow-[3px_0px_20px_0px_#0000000A] lg:px-8 lg:py-8">
           <Sheet>
             <SheetTrigger asChild>
@@ -89,7 +89,7 @@ export default function Layout({
             </DropdownMenuContent>
           </DropdownMenu>
         </header>
-        <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+        <main className="flex h-full flex-1 flex-col gap-4 overflow-y-auto p-4 lg:p-7">
           {children}
         </main>
       </div>
