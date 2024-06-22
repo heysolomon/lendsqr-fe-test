@@ -1,7 +1,7 @@
 "use client";
 
 import UserInfoCard from "@/components/pages/dashboard/users/users-info-card";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import userIcon from "@/public/assets/icons/users-icon-cards.svg";
 import activeUserIcon from "@/public/assets/icons/active-users-cards-icon.svg";
 import userWithLoanIcon from "@/public/assets/icons/users-with-loans-icon.svg";
@@ -11,24 +11,7 @@ import { columns } from "@/components/pages/dashboard/users/user-data-table/colu
 import { useQuery } from "@tanstack/react-query";
 
 const Page = () => {
-  const users = [
-    {
-      organization: "Lendsqr",
-      username: "Adedeji",
-      email: "adedeji@lendsqr.com",
-      phone_number: "08078903721",
-      date_joined: "May 15, 2020 10:00 AM",
-      status: "inactive",
-    },
-    {
-      organization: "Lendsqr",
-      username: "Adedeji",
-      email: "adedeji@lendsqr.com",
-      phone_number: "08078903721",
-      date_joined: "May 15, 2020 10:00 AM",
-      status: "blacklisted",
-    },
-  ];
+  const [localData, setLocalData] = useState([]);
 
   const { data, isLoading, isError } = useQuery({
     queryKey: ["users"],
@@ -43,7 +26,17 @@ const Page = () => {
     },
   });
 
-  console.log();
+  useEffect(() => {
+    if (data) {
+      localStorage.setItem("users", JSON.stringify(data));
+      setLocalData(data);
+    } else {
+      const storedData = localStorage.getItem("users");
+      if (storedData) {
+        setLocalData(JSON.parse(storedData));
+      }
+    }
+  }, [data]);
 
   return (
     <div className="">
@@ -52,7 +45,7 @@ const Page = () => {
         {/* users */}
         <UserInfoCard
           title="users"
-          content={data?.length}
+          content={`${localData?.length}`}
           className="bg-[#DF18FF]/10"
           icon={userIcon}
         />
@@ -60,7 +53,7 @@ const Page = () => {
         {/* active users */}
         <UserInfoCard
           title="Active Users"
-          content={data?.length}
+          content={`${localData?.length}`}
           className="bg-[#5718FF]/10"
           icon={activeUserIcon}
         />
@@ -81,7 +74,7 @@ const Page = () => {
           icon={userWithSavingsIcon}
         />
       </div>
-      {data && <DataTable data={data} columns={columns} />}
+      {localData && <DataTable data={localData} columns={columns} />}
     </div>
   );
 };

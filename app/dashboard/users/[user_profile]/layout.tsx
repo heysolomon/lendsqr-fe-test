@@ -88,12 +88,12 @@ const Layout = ({
 
       <div className="space-y-5 border border-[#213F7D0F] bg-white p-5 pb-0 shadow-[3px_5px_20px_0px_#0000000A]">
         <div className="flex items-center gap-5">
-          <Avatar className="h-max w-max bg-[#213F7D]/20 p-5">
+          <Avatar className="h-[100px] w-[100px] bg-[#213F7D]/20 p-5">
             <AvatarImage
               src="/assets/icons/user-details-icon-user.svg"
               alt="user"
             />
-            <AvatarFallback>image</AvatarFallback>
+            {/* <AvatarFallback>image</AvatarFallback> */}
           </Avatar>
 
           <div className="flex items-center">
