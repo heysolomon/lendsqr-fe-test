@@ -39,7 +39,7 @@ export const columns: ColumnDef<User>[] = [
   {
     accessorKey: "phone_number",
     header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="phone_number" />
+      <DataTableColumnHeader column={column} title="phone number" />
     ),
     cell: ({ row }) => {
       return <div className="flex">{row.getValue("phone_number")}</div>;
@@ -48,7 +48,7 @@ export const columns: ColumnDef<User>[] = [
   {
     accessorKey: "date_joined",
     header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="date_joined" />
+      <DataTableColumnHeader column={column} title="date joined" />
     ),
     cell: ({ row }) => {
       return <div className="flex">{row.getValue("date_joined")}</div>;

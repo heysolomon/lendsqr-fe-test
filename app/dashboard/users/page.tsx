@@ -52,7 +52,7 @@ const Page = () => {
         {/* users */}
         <UserInfoCard
           title="users"
-          content="2,453"
+          content={data?.length}
           className="bg-[#DF18FF]/10"
           icon={userIcon}
         />
@@ -60,7 +60,7 @@ const Page = () => {
         {/* active users */}
         <UserInfoCard
           title="Active Users"
-          content="2,453"
+          content={data?.length}
           className="bg-[#5718FF]/10"
           icon={activeUserIcon}
         />
