@@ -17,3 +17,17 @@
         background-color: #213F7D;
     }
 }
+
+
+.horizontal-scroll::-webkit-scrollbar {
+    height: 2px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #213F7D;
+}

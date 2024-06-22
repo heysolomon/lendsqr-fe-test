@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { avenirNextBold, avenirNextLight, avenirNextRegular, workSans } from "@/lib/localFonts";
+import {
+  avenirNextBold,
+  avenirNextLight,
+  avenirNextRegular,
+  workSans,
+} from "@/lib/localFonts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${avenirNextLight.variable} ${avenirNextRegular.variable} ${avenirNextBold.variable} ${workSans.variable}`}>{children}</body>
+      <body
+        className={`${avenirNextLight.variable} ${avenirNextRegular.variable} ${avenirNextBold.variable} ${workSans.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
