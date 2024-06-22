@@ -47,15 +47,17 @@ export default function Layout({
                 <MobileSidebar />
               </SheetContent>
             </Sheet>
-            <div className="w-full flex-1">
+            <div className="w-full">
               <form>
-                <div className="relative">
-                  <Search className="text-muted-foreground absolute left-2.5 top-2.5 h-4 w-4" />
+                <div className="flex h-10 w-max items-center justify-between rounded-lg border-y border-l md:w-[400px]">
                   <Input
                     type="search"
-                    placeholder="Search products..."
-                    className="bg-background w-full appearance-none pl-8 shadow-none md:w-2/3 lg:w-1/3"
+                    placeholder="Search for anything"
+                    className="h-full w-full appearance-none border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 md:w-2/3 lg:w-full"
                   />
+                  <div className="flex h-10 items-center justify-center rounded-r-lg bg-[#39CDCC] px-[21px]">
+                    <Search className="h-4 w-4 text-white" />
+                  </div>
                 </div>
               </form>
             </div>

@@ -20,7 +20,7 @@ const Page = () => {
         "https://run.mocky.io/v3/0819ac61-8e70-4cd3-9d8c-bdda7f4bf8ee",
       );
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        throw new Error("failed getting records");
       }
       return response.json();
     },
