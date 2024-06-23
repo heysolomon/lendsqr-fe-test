@@ -71,6 +71,12 @@ export default function Layout({
             >
               Docs
             </Link>
+            <Image
+              src={`/assets/icons/bell-icon.png`}
+              width={26}
+              height={26}
+              alt=""
+            />
             <Avatar className="hidden h-[48px] w-[48px] bg-[#213F7D]/20 md:block">
               <AvatarImage src="/assets/images/avatar-image.svg" alt="user" />
               {/* <AvatarFallback>image</AvatarFallback> */}
