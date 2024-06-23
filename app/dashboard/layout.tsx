@@ -57,7 +57,7 @@ export default function Layout({
                   <Input
                     type="search"
                     placeholder="Search for anything"
-                    className="h-full w-full appearance-none border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 md:w-2/3 lg:w-full"
+                    className="h-full w-2/3 appearance-none border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 md:w-2/3 lg:w-full"
                   />
                   <div className="flex h-10 items-center justify-center rounded-r-lg bg-[#39CDCC] px-[21px]">
                     <Search className="h-4 w-4 text-white" />
@@ -65,10 +65,13 @@ export default function Layout({
                 </div>
               </form>
             </div>
-            <Link href="" className="text-[16px] text-secondary underline">
+            <Link
+              href=""
+              className="hidden text-[16px] text-secondary underline md:block"
+            >
               Docs
             </Link>
-            <Avatar className="h-[48px] w-[48px] bg-[#213F7D]/20">
+            <Avatar className="hidden h-[48px] w-[48px] bg-[#213F7D]/20 md:block">
               <AvatarImage src="/assets/images/avatar-image.svg" alt="user" />
               {/* <AvatarFallback>image</AvatarFallback> */}
             </Avatar>

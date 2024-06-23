@@ -41,7 +41,7 @@ const Page = () => {
   return (
     <div className="">
       <h1 className="mb-10 text-2xl font-medium text-secondary">Users</h1>
-      <div className="grid grid-cols-4 gap-[26px]">
+      <div className="grid grid-cols-2 gap-[26px] md:grid-cols-4">
         {/* users */}
         <UserInfoCard
           title="users"

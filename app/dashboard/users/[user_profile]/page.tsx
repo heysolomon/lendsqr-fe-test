@@ -7,7 +7,7 @@ const Page = () => {
         <h4 className="mb-[30px] text-[16px] font-medium text-secondary">
           Personal Information
         </h4>
-        <div className="grid grid-cols-5 gap-y-[30px]">
+        <div className="grid grid-cols-2 gap-y-[30px] md:grid-cols-5">
           <div className="">
             <p className="text-xs uppercase text-[#545F7D]">full Name</p>
             <p className="mt-2 text-[16px] font-medium capitalize text-[#545F7D]">
@@ -64,7 +64,7 @@ const Page = () => {
         <h4 className="mb-[30px] text-[16px] font-medium text-secondary">
           Education and Employment
         </h4>
-        <div className="grid grid-cols-4 gap-y-[30px]">
+        <div className="grid grid-cols-2 gap-x-10 gap-y-[30px] md:grid-cols-4 md:gap-x-0">
           <div className="">
             <p className="text-xs uppercase text-[#545F7D]">
               level of education
@@ -121,7 +121,7 @@ const Page = () => {
         <h4 className="mb-[30px] text-[16px] font-medium text-secondary">
           Socials
         </h4>
-        <div className="grid grid-cols-5 gap-y-[30px]">
+        <div className="grid grid-cols-2 gap-y-[30px] md:grid-cols-5">
           <div className="">
             <p className="text-xs uppercase text-[#545F7D]">Twitter</p>
             <p className="mt-2 text-[16px] font-medium capitalize text-[#545F7D]">
@@ -146,7 +146,7 @@ const Page = () => {
         <h4 className="mb-[30px] text-[16px] font-medium text-secondary">
           Guarantor
         </h4>
-        <div className="grid grid-cols-5 gap-y-[30px] border-b border-b-[#213F7D]/30 pb-[30px]">
+        <div className="grid grid-cols-2 gap-y-[30px] border-b border-b-[#213F7D]/30 pb-[30px] md:grid-cols-5">
           <div className="">
             <p className="text-xs uppercase text-[#545F7D]">full Name</p>
             <p className="mt-2 text-[16px] font-medium capitalize text-[#545F7D]">
@@ -172,7 +172,7 @@ const Page = () => {
             </p>
           </div>
         </div>
-        <div className="mt-[60px] grid grid-cols-5 gap-y-[30px]">
+        <div className="mt-[60px] grid grid-cols-2 gap-y-[30px] md:grid-cols-5">
           <div className="">
             <p className="text-xs uppercase text-[#545F7D]">full Name</p>
             <p className="mt-2 text-[16px] font-medium capitalize text-[#545F7D]">
