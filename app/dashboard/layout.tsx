@@ -1,4 +1,4 @@
-"use client"; // Add this directive at the top of the file
+"use client";
 
 import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -18,6 +18,10 @@ import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Sidebar from "@/components/pages/dashboard/sidebar";
 import MobileSidebar from "@/components/pages/dashboard/mobile-sidebar";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import Link from "next/link";
+import Image from "next/image";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 export default function Layout({
   children,
@@ -61,15 +65,21 @@ export default function Layout({
                 </div>
               </form>
             </div>
+            <Link href="" className="text-[16px] text-secondary underline">
+              Docs
+            </Link>
+            <Avatar className="h-[48px] w-[48px] bg-[#213F7D]/20">
+              <AvatarImage src="/assets/images/avatar-image.svg" alt="user" />
+              {/* <AvatarFallback>image</AvatarFallback> */}
+            </Avatar>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
-                  variant="secondary"
-                  size="icon"
-                  className="rounded-full"
+                  className="h-auto p-0 font-medium text-secondary hover:bg-transparent hover:text-secondary"
+                  variant={`ghost`}
                 >
-                  <CircleUser className="h-5 w-5" />
-                  <span className="sr-only">Toggle user menu</span>
+                  Adedeji
+                  <IoMdArrowDropdown />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
