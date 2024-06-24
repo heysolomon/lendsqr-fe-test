@@ -25,7 +25,7 @@ const LoginSchema: ZodSchema = z.object({
     .regex(
       /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/,
       `Must Contain One Uppercase, One Lowercase,
-  One Number and one special case Character`
+  One Number and one special case Character`,
     )
     .min(8, "password must be atleast 8 characters long"),
 });
@@ -39,25 +39,25 @@ const LoginForm = () => {
     },
   });
 
-  const sendEmail = async (values: z.infer<typeof LoginSchema>) => {
+  const login = async (values: z.infer<typeof LoginSchema>) => {
     console.log("submit to an api");
   };
 
   function onSubmit(values: z.infer<typeof LoginSchema>) {
-    sendEmail(values);
+    login(values);
   }
   return (
-    <div className="p-10 md:w-[80%] drop-shadow-auth">
+    <div className="drop-shadow-auth p-10 md:w-[80%]">
       {/* lendsqr logo */}
       <Image
         src="/assets/icons/logo.svg"
         width={173.76}
         height={36}
         alt=""
-        className="md:hidden mb-10 w-[35%]"
+        className="mb-10 w-[35%] md:hidden"
       />
       <div className="mb-10">
-        <h1 className="font-avenir-bold font-bold text-secondary text-[40px]">
+        <h1 className="font-avenir-bold text-[40px] font-bold text-secondary">
           Welcome!
         </h1>
         <p className="text-[20px] text-[#545F7D]">Enter details to login.</p>
@@ -74,7 +74,7 @@ const LoginForm = () => {
                 <FormControl>
                   <Input
                     placeholder="Email"
-                    className="border-[2px] border-[#545F7D26] rounded-[5px] text-sm p-4 h-auto focus-visible:ring-secondary"
+                    className="h-auto rounded-[5px] border-[2px] border-[#545F7D26] p-4 text-sm focus-visible:ring-secondary"
                     {...field}
                   />
                 </FormControl>
@@ -98,13 +98,13 @@ const LoginForm = () => {
           />
 
           <Link href="/auth/forgot%20password" className="">
-            <p className="uppercase mt-6 font-avenir-bold hover:underline font-semibold text-primary text-xs">
+            <p className="mt-6 font-avenir-bold text-xs font-semibold uppercase text-primary hover:underline">
               Forgot PASSWORD?
             </p>
           </Link>
           <Button
             type="submit"
-            className="w-full bg-primary text-sm py-3 h-auto rounded-lg hover:bg-primary/80 font-avenir-bold font-semibold text-white uppercase"
+            className="h-auto w-full rounded-lg bg-primary py-3 font-avenir-bold text-sm font-semibold uppercase text-white hover:bg-primary/80"
           >
             Submit
           </Button>
