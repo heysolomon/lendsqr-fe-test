@@ -7,6 +7,7 @@ import { DataTableRowActions } from "./data-table-row-actions";
 import { User } from "./schema";
 import { statuses } from "./data";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 export const columns: ColumnDef<User>[] = [
   {
@@ -15,7 +16,16 @@ export const columns: ColumnDef<User>[] = [
       <DataTableColumnHeader column={column} title="Organization" />
     ),
     cell: ({ row }) => {
-      return <div className="flex">{row.getValue("organization")}</div>;
+      return (
+        <div className="flex">
+          <Link
+            className="hover:underline"
+            href={`/dashboard/users/${row.original.organization}`}
+          >
+            {row.getValue("organization")}
+          </Link>
+        </div>
+      );
     },
   },
   {

@@ -66,7 +66,7 @@ export function DataTableColumnHeader<TData, TValue>({
   });
 
   const filter = async (values: z.infer<typeof FilterSchema>) => {
-    console.log("submit to an api");
+    console.log("filter table");
   };
 
   function onSubmit(values: z.infer<typeof FilterSchema>) {

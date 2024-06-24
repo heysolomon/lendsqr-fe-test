@@ -6,12 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  DoubleArrowLeftIcon,
-  DoubleArrowRightIcon,
-} from "@radix-ui/react-icons";
+import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { Table } from "@tanstack/react-table";
 
 interface DataTablePaginationProps<TData> {
@@ -57,8 +52,30 @@ export function DataTablePagination<TData>({
           <span className="sr-only">Go to previous page</span>
           <ChevronLeftIcon className="h-[14px] w-[14px]" />
         </Button>
-        <div className="flex items-center justify-center text-sm font-medium">
+        <div
+          className={`flex items-center justify-center text-sm text-[#545F7D] ${table.getState().pagination.pageIndex + 1 == table.getState().pagination.pageIndex + 1 && "font-medium"}`}
+        >
           {table.getState().pagination.pageIndex + 1}
+        </div>
+        <div
+          className={`flex items-center justify-center text-sm text-[#545F7D] ${table.getState().pagination.pageIndex + 2 == table.getState().pagination.pageIndex + 1 && "font-medium"}`}
+        >
+          {table.getState().pagination.pageIndex + 2}
+        </div>
+        <span
+          className={`flex items-center justify-center text-sm text-[#545F7D] ${table.getState().pagination.pageIndex && "font-medium"}`}
+        >
+          ...
+        </span>
+        <div
+          className={`flex items-center justify-center text-sm text-[#545F7D] ${table.getState().pagination.pageIndex && "font-medium"}`}
+        >
+          {table.getPageCount() - 1}
+        </div>
+        <div
+          className={`flex items-center justify-center text-sm text-[#545F7D] ${table.getState().pagination.pageIndex && "font-medium"}`}
+        >
+          {table.getPageCount()}
         </div>
         <Button
           variant="outline"
