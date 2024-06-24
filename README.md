@@ -27,6 +27,7 @@
   <ol>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#view">Viewing website on the web</a></li>
     <li><a href="#contributing">Contributing</a></li>
   </ol>
 </details>
@@ -80,6 +81,22 @@ _Below are steps to follow in setting up the project._
    ```sh
    pnpm run dev
    ```
+   
+### How to view the pages done
+
+_Below are steps to follow to view the live website._
+
+1. visit
+   ```sh
+   https://solomon-victor-akuson-lendsqr-fe-test.vercel.app/
+   ```
+   ![Login page](https://github.com/heysolomon/lendsqr-fe-test/assets/59674245/8f9febfa-acd3-4949-b8ad-aab322c3818c)
+
+2. Fill the login credentials. Only client-side validation is done on them, so make sure you enter a valid email address and a password that's at least 6 characters long with the addition of special characters in them. Once you click on the submit button, you will be redirected to the ```/dashboard/users``` where it has a list of user records. It pulls from a mock API with 500 records.
+![dashboard](https://github.com/heysolomon/lendsqr-fe-test/assets/59674245/fe64615a-b86f-46b2-aa33-bb8c85b771c1)
+
+3. Click on an organisation name from the listed records to be directed to the organisation details page.
+   ![user details page](https://github.com/heysolomon/lendsqr-fe-test/assets/59674245/a8b5f174-13b8-4089-92bf-2ce7ad60e9bd)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
