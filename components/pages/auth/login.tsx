@@ -13,6 +13,7 @@ import PasswordInput from "@/components/ui/password-input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { ZodSchema, z } from "zod";
 
@@ -31,6 +32,8 @@ const LoginSchema: ZodSchema = z.object({
 });
 
 const LoginForm = () => {
+  const router = useRouter();
+
   const form = useForm<z.infer<typeof LoginSchema>>({
     resolver: zodResolver(LoginSchema),
     defaultValues: {
@@ -40,7 +43,7 @@ const LoginForm = () => {
   });
 
   const login = async (values: z.infer<typeof LoginSchema>) => {
-    console.log("submit to an api");
+    router.push("/dashboard/users");
   };
 
   function onSubmit(values: z.infer<typeof LoginSchema>) {
