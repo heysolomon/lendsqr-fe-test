@@ -171,7 +171,7 @@ const Layout = ({
               <Link
                 key={index}
                 href={item.link}
-                className={`group user-nav__link`}
+                className="user-nav__link"
               >
                 <li
                   className={`user-nav__item ${path === item.link && "user-nav__item--active"}`}

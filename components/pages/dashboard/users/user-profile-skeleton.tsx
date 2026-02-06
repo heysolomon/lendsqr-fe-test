@@ -18,7 +18,7 @@ export function UserProfileSkeleton() {
             </div>
 
             {/* User header card skeleton */}
-            <div className="user-header-card" style={{ paddingBottom: '40px' }}>
+            <div className="user-header-card user-header-card--skeleton">
                 <div className="user-header-card__info">
                     <Skeleton className="user-profile-skeleton__avatar skeleton--circle" />
                     <div className="user-header-card__details">
