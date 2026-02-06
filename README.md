@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://github.com/heysolomon/lendsqr-fe-test/">
-    <img src="https://github.com/heysolomon/lendsqr-fe-test/assets/59674245/f685e10d-b65a-4607-8b95-84fd143028b0" alt="Logo" width="200" height="">
+    <img width="174" height="36" alt="Group" src="https://github.com/user-attachments/assets/0b4d18f4-1271-4ebb-bec1-8857da23672e" />
   </a>
 
   <h3 align="center">Lendsqr Test</h3>
