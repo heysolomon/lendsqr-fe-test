@@ -52,7 +52,7 @@ export const columns: ColumnDef<User>[] = [
       <DataTableColumnHeader column={column} title="phone number" />
     ),
     cell: ({ row }) => {
-      return <div className="data-table__cell-content">{row.getValue("phone_number")}</div>;
+      return <div className="data-table__cell-content data-table__cell-content--nowrap">{row.getValue("phone_number")}</div>;
     },
   },
   {
@@ -61,7 +61,7 @@ export const columns: ColumnDef<User>[] = [
       <DataTableColumnHeader column={column} title="date joined" />
     ),
     cell: ({ row }) => {
-      return <div className="data-table__cell-content">{row.getValue("date_joined")}</div>;
+      return <div className="data-table__cell-content data-table__cell-content--nowrap">{row.getValue("date_joined")}</div>;
     },
   },
   {

@@ -47,7 +47,7 @@
 }
 
 .data-table__body-cell {
-    font-size: $font-size-xs;
+    font-size: 14px;
     padding-top: 21px;
     padding-bottom: 23px;
     padding-left: $spacing-4;
@@ -59,6 +59,10 @@
 .data-table__cell-content {
     display: flex;
     align-items: center; // Assuming we want vertical center
+
+    &--nowrap {
+        white-space: nowrap;
+    }
 }
 
 .data-table__link {
