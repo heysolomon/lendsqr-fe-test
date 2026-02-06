@@ -1,0 +1,385 @@
+// ==========================================================================
+// Users Page Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+// Users page container
+.users-page {
+    &__title {
+        margin-bottom: $spacing-10;
+        font-size: $font-size-2xl;
+        font-weight: $font-weight-medium;
+        color: $color-secondary;
+    }
+}
+
+// Stats cards grid
+.users-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+
+    @include md {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+// User info card component
+.user-info-card {
+    border-radius: 4px;
+    border: 1px solid rgba($color-secondary, 0.06);
+    padding: $spacing-5 30px;
+    background-color: $color-bg-white;
+    box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__icon-wrapper {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        border-radius: $border-radius-full;
+
+        // Icon background variants
+        &--pink {
+            background-color: rgba(#DF18FF, 0.1);
+        }
+
+        &--purple {
+            background-color: rgba(#5718FF, 0.1);
+        }
+
+        &--orange {
+            background-color: rgba(#F55F44, 0.1);
+        }
+
+        &--coral {
+            background-color: rgba(#FF3366, 0.1);
+        }
+    }
+
+    &__label {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+        text-transform: uppercase;
+        color: $color-text-muted;
+    }
+
+    &__content {
+        margin-top: 14px;
+        padding: 0;
+    }
+
+    &__value {
+        font-size: $font-size-2xl;
+        font-weight: $font-weight-semibold;
+        color: $color-secondary;
+    }
+}
+
+// ==========================================================================
+// User Profile Layout & Page Styles
+// ==========================================================================
+
+.user-profile-layout {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    &__back-btn {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        padding: 0;
+        color: $color-text-muted;
+
+        &:hover {
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    }
+
+    &__header {
+        margin-bottom: $spacing-10;
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-5;
+
+        @include md {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0;
+        }
+    }
+
+    &__title {
+        font-size: $font-size-2xl;
+        font-weight: $font-weight-medium;
+        color: $color-secondary;
+    }
+
+    &__actions {
+        display: flex;
+        gap: $spacing-5;
+    }
+
+    &__action-btn {
+        height: auto;
+        border-radius: $border-radius-lg;
+        padding: $spacing-3 $spacing-4;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-semibold;
+        text-transform: uppercase;
+        background-color: transparent;
+        box-shadow: none;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &--blacklist {
+            border: 1px solid #E4033B;
+            color: #E4033B;
+        }
+
+        &--activate {
+            border: 1px solid #39CDCC;
+            color: #39CDCC;
+        }
+    }
+}
+
+.user-header-card {
+    border: 1px solid rgba($color-secondary, 0.06);
+    background-color: $color-bg-white;
+    padding: $spacing-5;
+    padding-bottom: 0;
+    box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-5;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $spacing-5;
+
+        @include md {
+            flex-direction: row;
+        }
+    }
+
+    &__avatar {
+        height: 100px;
+        width: 100px;
+        background-color: rgba($color-primary, 0.16); // #213F7D/20 approx
+        padding: $spacing-5;
+    }
+
+    &__details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: $spacing-4;
+        width: 100%;
+
+        @include md {
+            display: flex;
+            gap: 0;
+        }
+    }
+
+    &__name-section {
+        @include md {
+            padding-right: 30px;
+        }
+    }
+
+    &__name {
+        font-size: 22px;
+        font-weight: $font-weight-medium;
+        color: $color-secondary;
+        white-space: nowrap;
+    }
+
+    &__id {
+        margin-top: $spacing-2;
+        color: $color-text-muted;
+    }
+
+    &__tier-section {
+        padding: 19px 0;
+
+        @include md {
+            padding: 19px 30px;
+        }
+    }
+
+    &__tier-label {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+        color: $color-text-muted;
+    }
+
+    &__stars {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 4.63px;
+        color: #E9B200;
+    }
+
+    &__bank-section {
+        padding: 19px 0;
+
+        @include md {
+            padding: 19px 30px;
+        }
+    }
+
+    &__amount {
+        font-size: 22px;
+        font-weight: $font-weight-medium;
+        color: $color-secondary;
+    }
+
+    &__bank-details {
+        margin-top: 10px;
+        font-size: $font-size-xs;
+        color: $color-secondary;
+        white-space: nowrap;
+    }
+
+    &__divider {
+        display: none;
+        height: 80px;
+        background-color: $color-text-muted;
+
+        @include md {
+            display: block;
+        }
+    }
+}
+
+.user-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-3; // gap-y-3
+    list-style: none;
+    background-color: $color-bg-white;
+    border-radius: 15px; // rounded-[15px] - wait, is this applied to the nav container? Yes.
+
+    @include md {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 0;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        border-radius: 25px 25px 0 0; // rounded-t-[25px]
+    }
+
+    &__item {
+        padding: 0 $spacing-2 10px $spacing-2; // px-2 pb-2.5
+        font-size: 16px;
+        font-weight: $font-weight-medium;
+        color: $color-secondary;
+        white-space: nowrap;
+
+        &--active {
+            border-bottom: 2px solid #39CDCC;
+            color: #39CDCC;
+        }
+    }
+}
+
+.user-profile {
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba($color-secondary, 0.06);
+    background-color: $color-bg-white;
+    padding: 30px;
+    box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
+
+    &__section {
+        border-bottom: 1px solid rgba($color-primary, 0.1); // #213F7D/30 approx? actually 0.3 opacity of #213F7D
+        padding: 28px 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: $font-weight-medium;
+        color: $color-secondary;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px; // gap-y-[30px]
+
+        @include md {
+            grid-template-columns: repeat(5, 1fr);
+            // gap-x is default 0? No, tailwind grid has gap. Page.tsx says gap-y-[30px] and gap-x-10 in one section.
+        }
+
+        &--education {
+            @include md {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 0 40px; // gap-x-10
+            }
+        }
+
+        &--guarantor {
+            border-bottom: 1px solid rgba($color-primary, 0.1);
+            padding-bottom: 30px;
+        }
+    }
+
+    &__grid-row-2 {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        @include md {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+
+    &__label {
+        font-size: $font-size-xs;
+        text-transform: uppercase;
+        color: $color-text-muted;
+    }
+
+    &__value {
+        margin-top: $spacing-2;
+        font-size: 16px;
+        font-weight: $font-weight-medium;
+        text-transform: capitalize;
+        color: $color-text-muted;
+        overflow-wrap: break-word; // Ensure email addresses wrap if needed
+    }
+}

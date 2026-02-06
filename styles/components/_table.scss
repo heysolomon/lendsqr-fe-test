@@ -1,0 +1,80 @@
+// ==========================================================================
+// Table Component Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.table-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    @include horizontal-scrollbar(4px);
+}
+
+.table {
+    width: 100%;
+    caption-side: bottom;
+    font-size: $font-size-sm;
+}
+
+.table__header {
+    [data-state="selected"] {
+        background-color: $color-slate-100;
+    }
+}
+
+.table__body {
+    [data-state="selected"] {
+        background-color: $color-slate-100;
+    }
+}
+
+.table__footer {
+    border-top: $border-width-default solid $color-slate-200;
+    background-color: rgba($color-slate-100, 0.5);
+    font-weight: $font-weight-medium;
+}
+
+.table__row {
+    border-bottom: $border-width-default solid $color-slate-200;
+    @include transition-colors;
+
+    &:hover {
+        background-color: rgba($color-slate-100, 0.5);
+    }
+
+    &[data-state="selected"] {
+        background-color: $color-slate-100;
+    }
+}
+
+.table__head {
+    height: 2.5rem;
+    padding: 0 $spacing-2;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: $font-weight-medium;
+    color: $color-slate-500;
+
+    &:has([role="checkbox"]) {
+        padding-right: 0;
+    }
+}
+
+.table__cell {
+    padding: $spacing-2;
+    vertical-align: middle;
+
+    &:has([role="checkbox"]) {
+        padding-right: 0;
+    }
+}
+
+.table__caption {
+    margin-top: $spacing-4;
+    font-size: $font-size-sm;
+    color: $color-slate-500;
+}
+
+// Dark mode

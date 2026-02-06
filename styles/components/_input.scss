@@ -1,0 +1,42 @@
+// ==========================================================================
+// Input Component Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.input {
+    display: flex;
+    height: 2.25rem;
+    width: 100%;
+    border-radius: $border-radius-md;
+    border: $border-width-default solid $color-slate-200;
+    background-color: transparent;
+    padding: $spacing-1 $spacing-3;
+    font-size: $font-size-sm;
+    box-shadow: $shadow-sm;
+    @include transition-colors;
+
+    &::file-selector-button {
+        border: 0;
+        background-color: transparent;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+    }
+
+    &::placeholder {
+        color: $color-slate-500;
+    }
+
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 1px $color-slate-950;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+}
+
+// Dark mode

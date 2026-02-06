@@ -1,0 +1,46 @@
+// ==========================================================================
+// Card Component Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.card {
+    border-radius: $border-radius-xl;
+    border: $border-width-default solid $color-slate-200;
+    background-color: $color-bg-white;
+    color: $color-slate-950;
+    box-shadow: $shadow-default;
+}
+
+.card__header {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-1-5;
+    padding: $spacing-6;
+}
+
+.card__title {
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-none;
+    letter-spacing: $letter-spacing-tight;
+}
+
+.card__description {
+    font-size: $font-size-sm;
+    color: $color-slate-500;
+}
+
+.card__content {
+    padding: $spacing-6;
+    padding-top: 0;
+}
+
+.card__footer {
+    display: flex;
+    align-items: center;
+    padding: $spacing-6;
+    padding-top: 0;
+}
+
+// Dark mode

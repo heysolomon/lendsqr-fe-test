@@ -1,0 +1,86 @@
+// ==========================================================================
+// Global Styles
+// ==========================================================================
+
+// Import design system
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+@use '../styles/reset';
+@use '../styles/utilities';
+
+// Import component styles
+@use '../styles/components/index';
+
+// Import page-specific styles
+@use '../styles/pages/index' as pages;
+
+// ==========================================================================
+// Custom Application Styles
+// ==========================================================================
+
+// Scrollbar styling (from original)
+.horizontal-scroll {
+    @include horizontal-scrollbar;
+}
+
+// Custom drop shadow for auth forms
+.drop-shadow-auth {
+    box-shadow: $shadow-auth;
+}
+
+// Font utilities
+.font-avenir-light {
+    font-family: $font-avenir-light;
+}
+
+.font-avenir-regular {
+    font-family: $font-avenir-regular;
+}
+
+.font-avenir-bold {
+    font-family: $font-avenir-bold;
+    font-weight: $font-weight-bold;
+}
+
+.font-work-sans {
+    font-family: $font-work-sans;
+}
+
+// Color utilities for custom colors
+.text-primary {
+    color: $color-primary;
+}
+
+.text-secondary {
+    color: $color-secondary;
+}
+
+.bg-primary {
+    background-color: $color-primary;
+}
+
+.bg-secondary {
+    background-color: $color-secondary;
+}
+
+// Hover variants
+.hover\:bg-primary\/80:hover {
+    background-color: rgba($color-primary, 0.8);
+}
+
+.hover\:underline:hover {
+    text-decoration: underline;
+}
+
+.hover\:bg-transparent:hover {
+    background-color: transparent;
+}
+
+.hover\:text-secondary:hover {
+    color: $color-secondary;
+}
+
+// Focus ring for secondary color
+.focus-visible\:ring-secondary:focus-visible {
+    box-shadow: 0 0 0 1px $color-secondary;
+}

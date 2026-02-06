@@ -1,0 +1,32 @@
+// ==========================================================================
+// Avatar Component Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.avatar {
+    position: relative;
+    display: flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: $border-radius-full;
+}
+
+.avatar__image {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    width: 100%;
+}
+
+.avatar__fallback {
+    @include flex-center;
+    height: 100%;
+    width: 100%;
+    border-radius: $border-radius-full;
+    background-color: $color-slate-100;
+}
+
+// Dark mode

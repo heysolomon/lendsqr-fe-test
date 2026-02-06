@@ -1,0 +1,236 @@
+// ==========================================================================
+// Calendar Component Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.calendar {
+    padding: $spacing-3;
+}
+
+.calendar__months {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-4;
+
+    @include sm {
+        flex-direction: row;
+        gap: $spacing-4;
+    }
+}
+
+.calendar__month {
+    &>*+* {
+        margin-top: $spacing-4;
+    }
+}
+
+.calendar__caption {
+    display: flex;
+    justify-content: center;
+    padding-top: $spacing-1;
+    position: relative;
+    align-items: center;
+}
+
+// .calendar__caption-label {
+//     font-size: $font-size-sm;
+//     font-weight: $font-weight-medium;
+// }
+
+.calendar__caption-dropdowns {
+    display: flex;
+    justify-content: center;
+    gap: $spacing-1;
+    align-items: center;
+}
+
+.calendar__dropdown {
+    height: 2rem;
+    padding: 0 0.5rem;
+    border-radius: $border-radius-md;
+    border: $border-width-default solid $color-slate-200;
+    background-color: transparent;
+    font-size: $font-size-sm;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+        border-color: $color-primary;
+    }
+}
+
+.calendar__caption-label {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+
+    // Hide label when dropdowns are present (if both render)
+    &:has(+ .calendar__caption-dropdowns),
+    .calendar__caption-dropdowns~& {
+        display: none;
+    }
+
+    &--hidden {
+        display: none;
+    }
+}
+
+.calendar__nav {
+    display: flex;
+    align-items: center;
+    gap: $spacing-1;
+}
+
+.calendar__nav-button {
+    height: 1.75rem;
+    width: 1.75rem;
+    background-color: transparent;
+    padding: 0;
+    opacity: 0.5;
+    @include transition-colors;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    .calendar__chevron {
+        height: 1rem; // 16px (h-4)
+        width: 1rem; // 16px (w-4)
+    }
+}
+
+.calendar__nav-button--previous {
+    position: absolute;
+    left: $spacing-1;
+}
+
+.calendar__nav-button--next {
+    position: absolute;
+    right: $spacing-1;
+}
+
+.calendar__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    &>*+* {
+        margin-top: $spacing-1;
+    }
+}
+
+.calendar__head-row {
+    display: flex;
+}
+
+.calendar__head-cell {
+    color: $color-slate-500;
+    border-radius: $border-radius-md;
+    width: 2rem;
+    font-weight: $font-weight-normal;
+    font-size: 0.8rem;
+}
+
+.calendar__row {
+    display: flex;
+    width: 100%;
+    margin-top: $spacing-2;
+}
+
+.calendar__cell {
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    font-size: $font-size-sm;
+    padding: 0;
+    position: relative;
+
+    &:has([aria-selected].day-range-start) {
+        border-radius: $border-radius-md 0 0 $border-radius-md;
+    }
+
+    &:has([aria-selected].day-range-end) {
+        border-radius: 0 $border-radius-md $border-radius-md 0;
+    }
+
+    &:has([aria-selected].day-outside) {
+        background-color: rgba($color-slate-100, 0.5);
+    }
+
+    &:has([aria-selected]) {
+        background-color: $color-slate-100;
+    }
+
+    &:first-child:has([aria-selected]) {
+        border-radius: $border-radius-md 0 0 $border-radius-md;
+    }
+
+    &:last-child:has([aria-selected]) {
+        border-radius: 0 $border-radius-md $border-radius-md 0;
+    }
+}
+
+.calendar__day {
+    height: 2rem;
+    width: 2rem;
+    padding: 0 !important; // Override button padding
+    font-weight: $font-weight-normal;
+
+    &:hover:not([aria-selected]) {
+        background-color: $color-slate-100;
+        color: $color-slate-900;
+    }
+
+    &[aria-selected] {
+        opacity: 1;
+    }
+}
+
+.calendar__day--selected {
+    background-color: $color-primary;
+    color: $color-bg-white;
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-bg-white;
+    }
+
+    &:focus {
+        background-color: $color-primary;
+        color: $color-bg-white;
+    }
+}
+
+.calendar__day--today {
+    background-color: $color-slate-100;
+    color: $color-slate-900;
+}
+
+.calendar__day--outside {
+    color: $color-slate-500;
+    opacity: 0.5;
+
+    &[aria-selected] {
+        background-color: rgba($color-slate-100, 0.5);
+        color: $color-slate-500;
+        opacity: 0.3;
+    }
+}
+
+.calendar__day--disabled {
+    color: $color-slate-500;
+    opacity: 0.5;
+}
+
+.calendar__day--range-middle {
+    &[aria-selected] {
+        background-color: $color-slate-100;
+        color: $color-slate-900;
+    }
+}
+
+.calendar__day--hidden {
+    visibility: hidden;
+}
+
+// Dark mode

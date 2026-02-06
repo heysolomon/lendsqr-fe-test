@@ -1,0 +1,355 @@
+// ==========================================================================
+// Data Table Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.data-table-wrapper {
+    margin-top: $spacing-10;
+    border-radius: $border-radius-default;
+    border: 1px solid rgba($color-secondary, 0.06); // #213F7D0F
+    background-color: $color-bg-white;
+    padding: 30px;
+    padding-bottom: $spacing-8;
+    box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04); // #0000000A
+}
+
+.data-table {
+    width: 100%;
+}
+
+.data-table__header-row {
+    border: none;
+}
+
+.data-table__head-cell {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    color: $color-text-muted; // #545F7D
+    background-color: transparent; // Ensure no background on header
+    padding: $spacing-4;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.data-table__body-row {
+    border-bottom: 1px solid rgba($color-secondary, 0.1); // border-b-secondary
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &[data-state="selected"] {
+        background-color: rgba($color-secondary, 0.05);
+    }
+}
+
+.data-table__body-cell {
+    font-size: $font-size-xs;
+    padding-top: 21px;
+    padding-bottom: 23px;
+    padding-left: $spacing-4;
+    padding-right: $spacing-4;
+    color: $color-secondary;
+    vertical-align: middle;
+}
+
+.data-table__cell-content {
+    display: flex;
+    align-items: center; // Assuming we want vertical center
+}
+
+.data-table__link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.data-table__status-wrapper {
+    display: flex;
+    width: 100px;
+    align-items: center;
+}
+
+.data-table__status-badge {
+    text-transform: capitalize;
+}
+
+.data-table__empty-cell {
+    padding: $spacing-6;
+    text-align: center;
+    height: 6rem;
+    color: $color-text-muted;
+}
+
+// Column Header Component
+.data-table-column-header {
+    &__btn {
+        display: flex;
+        height: auto;
+        align-items: center;
+        gap: $spacing-2-5;
+        background-color: transparent !important; // Force transparency
+        padding: 0;
+        font-size: $font-size-xs;
+        font-weight: $font-weight-semibold;
+        text-transform: uppercase;
+        color: $color-text-muted; // #545F7D
+        box-shadow: none;
+        border: none;
+        outline: none;
+
+        &:hover {
+            background-color: transparent !important; // Force transparency on hover
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: none; // Remove focus ring if acceptable, or style it
+        }
+    }
+
+    &__popover-content {
+        border-radius: 4px;
+        border: 1px solid rgba($color-text-muted, 0.14); // #545F7D24
+        padding: $spacing-5; // 20px
+        box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
+        background-color: $color-bg-white;
+    }
+}
+
+// Filter Form Styles
+// Filter Form Styles
+.filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-5; // Replicates space-y-5 (20px)
+
+    &__label {
+        display: block; // Ensure block display
+        margin-bottom: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $color-text-muted;
+    }
+
+    &__input {
+        height: 40px;
+        width: 100%; // Ensure full width
+        border-radius: 5px; // rounded-[5px]
+        border: 1px solid rgba($color-text-muted, 0.15); // #545F7D26
+        padding: 0 16px; // p-4 usually implies 1rem, but for inputs often means px-4. Let's use horizontal padding 16px.
+        // If I use padding: 16px, height 40px will be overflowed. Input content-box vs border-box.
+        // Assuming box-sizing border-box.
+        font-size: $font-size-sm;
+        color: rgba($color-secondary, 0.7); // text-secondary/70
+        box-shadow: none;
+        background-color: transparent; // Ensure clean background
+
+        &::placeholder {
+            color: rgba($color-secondary, 0.7); // Match placeholder color if needed, or use default muted
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 0 1px $color-secondary; // focus-visible:ring-secondary
+            outline: none;
+            border-color: $color-secondary;
+        }
+    }
+
+    &__select-trigger {
+        @extend .filter-form__input;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        // Adjust padding for select trigger if needed
+        &[data-state="open"] {
+            border-color: $color-secondary;
+        }
+    }
+
+    &__date-trigger {
+        @extend .filter-form__input;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; // text-left
+        gap: 12px; // pl-3 usually implies padding, icon is ml-auto
+        padding-left: 12px;
+        font-weight: 400; // font-normal
+
+        // Icon styles
+        svg {
+            margin-left: auto;
+            opacity: 0.5;
+        }
+    }
+
+    &__actions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // grid-cols-2
+        gap: 14px; // gap-[14px]
+    }
+
+    &__reset-btn {
+        height: auto;
+        width: 100%;
+        border-radius: 8px; // rounded-lg
+        border: 1px solid $color-text-muted; // border-[#545F7D]
+        background-color: transparent;
+        padding-top: 12px; // py-3
+        padding-bottom: 12px;
+        font-family: $font-avenir-bold; // font-avenir-bold
+        font-size: $font-size-sm;
+        font-weight: 600; // font-semibold
+        text-transform: capitalize;
+        color: $color-text-muted; // text-[#545F7D]
+
+        &:hover {
+            background-color: transparent; // hover:bg-transparent
+        }
+    }
+
+    &__submit-btn {
+        height: auto;
+        width: 100%;
+        border-radius: 8px; // rounded-lg
+        background-color: $color-primary; // bg-primary
+        padding-top: 12px; // py-3
+        padding-bottom: 12px;
+        font-family: $font-avenir-bold; // font-avenir-bold
+        font-size: $font-size-sm;
+        font-weight: 600; // font-semibold
+        text-transform: uppercase;
+        color: $color-bg-white; // text-white
+
+        &:hover {
+            background-color: rgba($color-primary, 0.8); // hover:bg-primary/80
+        }
+    }
+}
+
+// Pagination Component
+.data-table-pagination {
+    margin-top: $spacing-5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: $spacing-2;
+    padding-right: $spacing-2;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: $spacing-6;
+
+        @include lg {
+            gap: $spacing-8;
+        }
+    }
+
+    &__showing-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: $spacing-2-5;
+    }
+
+    &__text {
+        font-size: $font-size-sm;
+        color: $color-text-muted;
+    }
+
+    &__select-trigger {
+        width: min-content;
+        border: none;
+        background-color: rgba($color-secondary, 0.1); // #213F7D1A
+        font-size: $font-size-sm;
+        color: $color-secondary;
+        box-shadow: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: $spacing-2;
+    }
+
+    &__nav-btn {
+        height: auto;
+        border-radius: 4px;
+        background-color: rgba($color-secondary, 0.1);
+        padding: 5px;
+        color: $color-secondary;
+        border: 1px solid rgba($color-secondary, 0.1); // Added border to match variant="outline" but with custom bg
+
+        &:hover {
+            background-color: rgba($color-secondary, 0.2);
+        }
+
+        &:disabled {
+            opacity: 0.5;
+        }
+    }
+
+    &__page-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $font-size-sm;
+        color: $color-text-muted;
+
+        &--active {
+            font-weight: $font-weight-medium;
+        }
+    }
+}
+
+// Row Actions Component
+.data-table-row-actions {
+    &__trigger {
+        height: auto;
+        background-color: transparent;
+        padding: 0;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    &__menu-content {
+        border-radius: 4px;
+        border: 1px solid rgba($color-text-muted, 0.04); // #545F7D0A
+        padding: $spacing-5 2.5px;
+        box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04); // #0000000A
+        background-color: $color-bg-white;
+    }
+
+    &__menu-item {
+        display: flex;
+        align-items: center;
+        gap: $spacing-2;
+        padding: $spacing-2-5;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-slate-100;
+        }
+    }
+
+    &__menu-text {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+        color: $color-text-muted;
+    }
+}

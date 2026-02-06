@@ -1,0 +1,23 @@
+// ==========================================================================
+// Separator Component Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.separator {
+    flex-shrink: 0;
+    background-color: $color-slate-200;
+
+    &--horizontal {
+        height: 1px;
+        width: 100%;
+    }
+
+    &--vertical {
+        height: 100%;
+        width: 1px;
+    }
+}
+
+// Dark mode

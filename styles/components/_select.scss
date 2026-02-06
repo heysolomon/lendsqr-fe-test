@@ -1,0 +1,197 @@
+// ==========================================================================
+// Select Component Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+// -----------------------------------------------------------------------------
+// Trigger
+// -----------------------------------------------------------------------------
+
+.select__trigger {
+    display: flex;
+    height: 2.25rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: $border-radius-md;
+    border: $border-width-default solid $color-slate-200;
+    background-color: $color-bg-white;
+    padding: $spacing-2 $spacing-3;
+    font-size: $font-size-sm;
+    box-shadow: $shadow-sm;
+
+    &::placeholder {
+        color: $color-slate-500;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px $color-slate-950;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+}
+
+.select__icon {
+    display: flex;
+    height: 1rem;
+    width: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+// -----------------------------------------------------------------------------
+// Scroll Buttons
+// -----------------------------------------------------------------------------
+
+.select__scroll-up,
+.select__scroll-down {
+    display: flex;
+    cursor: default;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-1;
+}
+
+// -----------------------------------------------------------------------------
+// Content
+// -----------------------------------------------------------------------------
+
+.select__content {
+    position: relative;
+    z-index: $z-index-dropdown;
+    max-height: 24rem;
+    min-width: 8rem;
+    overflow: hidden;
+    border-radius: $border-radius-md;
+    border: $border-width-default solid $color-slate-200;
+    background-color: $color-bg-white;
+    color: $color-slate-950;
+    box-shadow: $shadow-md;
+
+    &[data-state="open"] {
+        animation: zoom-in-95 $transition-fast $transition-timing,
+            fade-in $transition-fast $transition-timing;
+    }
+
+    &[data-state="closed"] {
+        animation: zoom-out-95 $transition-fast $transition-timing,
+            fade-out $transition-fast $transition-timing;
+    }
+
+    &[data-side="bottom"] {
+        animation: slide-in-from-top $transition-fast $transition-timing;
+    }
+
+    &[data-side="top"] {
+        animation: slide-in-from-bottom $transition-fast $transition-timing;
+    }
+
+    &[data-side="left"] {
+        animation: slide-in-from-right $transition-fast $transition-timing;
+    }
+
+    &[data-side="right"] {
+        animation: slide-in-from-left $transition-fast $transition-timing;
+    }
+}
+
+.select__content--popper {
+    &[data-side="bottom"] {
+        transform: translateY($spacing-1);
+    }
+
+    &[data-side="top"] {
+        transform: translateY(-$spacing-1);
+    }
+
+    &[data-side="left"] {
+        transform: translateX(-$spacing-1);
+    }
+
+    &[data-side="right"] {
+        transform: translateX($spacing-1);
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Viewport
+// -----------------------------------------------------------------------------
+
+.select__viewport {
+    padding: $spacing-1;
+}
+
+.select__viewport--popper {
+    height: var(--radix-select-trigger-height);
+    width: 100%;
+    min-width: var(--radix-select-trigger-width);
+}
+
+// -----------------------------------------------------------------------------
+// Label
+// -----------------------------------------------------------------------------
+
+.select__label {
+    padding: $spacing-1-5 $spacing-2 $spacing-1-5 $spacing-8;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+}
+
+// -----------------------------------------------------------------------------
+// Item
+// -----------------------------------------------------------------------------
+
+.select__item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    cursor: default;
+    user-select: none;
+    align-items: center;
+    border-radius: $border-radius-sm;
+    padding: $spacing-1-5 $spacing-2 $spacing-1-5 $spacing-8;
+    font-size: $font-size-sm;
+    outline: none;
+
+    &:focus {
+        background-color: rgba($color-secondary, 0.1);
+        color: $color-secondary;
+    }
+
+    &[data-disabled] {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.select__item-indicator {
+    position: absolute;
+    left: $spacing-2;
+    display: flex;
+    height: 0.875rem;
+    width: 0.875rem;
+    align-items: center;
+    justify-content: center;
+}
+
+// -----------------------------------------------------------------------------
+// Separator
+// -----------------------------------------------------------------------------
+
+.select__separator {
+    margin: $spacing-1 (
+        -$spacing-1
+    );
+height: 1px;
+background-color: $color-slate-100;
+}
+
+// -----------------------------------------------------------------------------
+// Dark Mode
+// -----------------------------------------------------------------------------

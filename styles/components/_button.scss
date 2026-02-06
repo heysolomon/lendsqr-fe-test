@@ -1,0 +1,124 @@
+// ==========================================================================
+// Button Component Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+// -----------------------------------------------------------------------------
+// Base Button
+// -----------------------------------------------------------------------------
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: $border-radius-md;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    @include transition-colors;
+
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 1px $color-slate-950;
+    }
+
+    &:disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Variants
+// -----------------------------------------------------------------------------
+
+.btn--default {
+    background-color: $color-slate-900;
+    color: $color-slate-50;
+    box-shadow: $shadow-sm;
+
+    &:hover {
+        background-color: rgba($color-slate-900, 0.9);
+    }
+}
+
+.btn--destructive {
+    background-color: $color-red-500;
+    color: $color-slate-50;
+    box-shadow: $shadow-sm;
+
+    &:hover {
+        background-color: rgba($color-red-500, 0.9);
+    }
+}
+
+.btn--outline {
+    border: $border-width-default solid $color-slate-200;
+    background-color: $color-bg-white;
+    box-shadow: $shadow-sm;
+
+    &:hover {
+        background-color: $color-slate-100;
+        color: $color-slate-900;
+    }
+}
+
+.btn--secondary {
+    background-color: $color-slate-100;
+    color: $color-slate-900;
+    box-shadow: $shadow-sm;
+
+    &:hover {
+        background-color: rgba($color-slate-100, 0.8);
+    }
+}
+
+.btn--ghost {
+    &:hover {
+        background-color: $color-slate-100;
+        color: $color-slate-900;
+    }
+}
+
+.btn--link {
+    color: $color-slate-900;
+    text-underline-offset: 4px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Sizes
+// -----------------------------------------------------------------------------
+
+.btn--md {
+    height: 2.25rem; // 36px
+    padding: $spacing-2 $spacing-4;
+}
+
+.btn--sm {
+    height: 2rem; // 32px
+    border-radius: $border-radius-md;
+    padding: 0 $spacing-3;
+    font-size: $font-size-xs;
+}
+
+.btn--lg {
+    height: 2.5rem; // 40px
+    border-radius: $border-radius-md;
+    padding: 0 $spacing-8;
+}
+
+.btn--icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    padding: 0;
+}
+
+// -----------------------------------------------------------------------------
+// Dark Mode (optional, kept for compatibility)
+// -----------------------------------------------------------------------------

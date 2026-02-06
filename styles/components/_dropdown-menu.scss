@@ -1,0 +1,188 @@
+// ==========================================================================
+// Dropdown Menu Component Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+// -----------------------------------------------------------------------------
+// Content
+// -----------------------------------------------------------------------------
+
+.dropdown-menu__content,
+.dropdown-menu__sub-content {
+    z-index: $z-index-dropdown;
+    min-width: 8rem;
+    overflow: hidden;
+    border-radius: $border-radius-md;
+    border: $border-width-default solid $color-slate-200;
+    background-color: $color-bg-white;
+    padding: $spacing-1;
+    color: $color-slate-950;
+    box-shadow: $shadow-md;
+
+    // Animation states
+    &[data-state="open"] {
+        animation: zoom-in-95 $transition-fast $transition-timing,
+            fade-in $transition-fast $transition-timing;
+    }
+
+    &[data-state="closed"] {
+        animation: zoom-out-95 $transition-fast $transition-timing,
+            fade-out $transition-fast $transition-timing;
+    }
+
+    // Side animations
+    &[data-side="bottom"] {
+        animation: slide-in-from-top $transition-fast $transition-timing;
+    }
+
+    &[data-side="top"] {
+        animation: slide-in-from-bottom $transition-fast $transition-timing;
+    }
+
+    &[data-side="left"] {
+        animation: slide-in-from-right $transition-fast $transition-timing;
+    }
+
+    &[data-side="right"] {
+        animation: slide-in-from-left $transition-fast $transition-timing;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Item
+// -----------------------------------------------------------------------------
+
+.dropdown-menu__item {
+    position: relative;
+    display: flex;
+    cursor: default;
+    user-select: none;
+    align-items: center;
+    border-radius: $border-radius-sm;
+    padding: $spacing-1-5 $spacing-2;
+    font-size: $font-size-sm;
+    outline: none;
+    @include transition-colors;
+
+    &:focus {
+        background-color: $color-slate-100;
+        color: $color-slate-900;
+    }
+
+    &[data-disabled] {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    &--inset {
+        padding-left: $spacing-8;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Checkbox / Radio Item
+// -----------------------------------------------------------------------------
+
+.dropdown-menu__checkbox-item,
+.dropdown-menu__radio-item {
+    position: relative;
+    display: flex;
+    cursor: default;
+    user-select: none;
+    align-items: center;
+    border-radius: $border-radius-sm;
+    padding: $spacing-1-5 $spacing-2 $spacing-1-5 $spacing-8;
+    font-size: $font-size-sm;
+    outline: none;
+    @include transition-colors;
+
+    &:focus {
+        background-color: $color-slate-100;
+        color: $color-slate-900;
+    }
+
+    &[data-disabled] {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.dropdown-menu__item-indicator {
+    position: absolute;
+    left: $spacing-2;
+    display: flex;
+    height: 0.875rem;
+    width: 0.875rem;
+    align-items: center;
+    justify-content: center;
+}
+
+// -----------------------------------------------------------------------------
+// Sub Trigger
+// -----------------------------------------------------------------------------
+
+.dropdown-menu__sub-trigger {
+    display: flex;
+    cursor: default;
+    user-select: none;
+    align-items: center;
+    border-radius: $border-radius-sm;
+    padding: $spacing-1-5 $spacing-2;
+    font-size: $font-size-sm;
+    outline: none;
+
+    &:focus {
+        background-color: $color-slate-100;
+    }
+
+    &[data-state="open"] {
+        background-color: $color-slate-100;
+    }
+
+    &--inset {
+        padding-left: $spacing-8;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Label
+// -----------------------------------------------------------------------------
+
+.dropdown-menu__label {
+    padding: $spacing-1-5 $spacing-2;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+
+    &--inset {
+        padding-left: $spacing-8;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Separator
+// -----------------------------------------------------------------------------
+
+.dropdown-menu__separator {
+    margin: $spacing-1 (
+        -$spacing-1
+    );
+height: 1px;
+background-color: $color-slate-100;
+}
+
+// -----------------------------------------------------------------------------
+// Shortcut
+// -----------------------------------------------------------------------------
+
+.dropdown-menu__shortcut {
+    margin-left: auto;
+    font-size: $font-size-xs;
+    letter-spacing: $letter-spacing-widest;
+    opacity: 0.6;
+}
+
+// -----------------------------------------------------------------------------
+// Dark Mode
+// -----------------------------------------------------------------------------

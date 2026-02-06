@@ -1,0 +1,46 @@
+// ==========================================================================
+// Popover Component Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.popover__content {
+    z-index: $z-index-popover;
+    width: 18rem;
+    border-radius: $border-radius-md;
+    border: $border-width-default solid $color-slate-200;
+    background-color: $color-bg-white;
+    padding: $spacing-4;
+    color: $color-slate-950;
+    box-shadow: $shadow-md;
+    outline: none;
+
+    &[data-state="open"] {
+        animation: zoom-in-95 $transition-fast $transition-timing,
+            fade-in $transition-fast $transition-timing;
+    }
+
+    &[data-state="closed"] {
+        animation: zoom-out-95 $transition-fast $transition-timing,
+            fade-out $transition-fast $transition-timing;
+    }
+
+    &[data-side="bottom"] {
+        animation: slide-in-from-top $transition-fast $transition-timing;
+    }
+
+    &[data-side="top"] {
+        animation: slide-in-from-bottom $transition-fast $transition-timing;
+    }
+
+    &[data-side="left"] {
+        animation: slide-in-from-right $transition-fast $transition-timing;
+    }
+
+    &[data-side="right"] {
+        animation: slide-in-from-left $transition-fast $transition-timing;
+    }
+}
+
+// Dark mode

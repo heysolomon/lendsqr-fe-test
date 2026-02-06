@@ -1,0 +1,36 @@
+// ==========================================================================
+// Form Component Styles
+// ==========================================================================
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.form__item {
+    &>*+* {
+        margin-top: $spacing-2;
+    }
+}
+
+.form__label {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-none;
+
+    // Error state
+    &--error {
+        color: $color-red-500;
+    }
+}
+
+.form__description {
+    font-size: 0.8rem;
+    color: $color-slate-500;
+}
+
+.form__message {
+    font-size: 0.8rem;
+    font-weight: $font-weight-medium;
+    color: $color-red-500;
+}
+
+// Dark mode

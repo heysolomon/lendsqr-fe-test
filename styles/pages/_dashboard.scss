@@ -1,0 +1,184 @@
+// ==========================================================================
+// Dashboard Layout Styles
+// ==========================================================================
+
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.dashboard-layout {
+    position: fixed;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: $color-bg-primary;
+    font-family: $font-work-sans;
+
+    @include md {
+        grid-template-columns: 220px 1fr;
+    }
+
+    @include lg {
+        grid-template-columns: 283px 1fr;
+    }
+}
+
+.dashboard-layout__content {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.dashboard-layout__header {
+    display: flex;
+    height: 3.5rem; // 56px / 14
+    align-items: center;
+    gap: $spacing-4;
+    background-color: $color-bg-white;
+    padding: 0 $spacing-4;
+    box-shadow: $shadow-dash-header;
+
+    @include lg {
+        padding: 0 $spacing-8;
+    }
+}
+
+.dashboard-layout__search-container {
+    width: 100%;
+}
+
+.dashboard-layout__search-box {
+    display: flex;
+    height: 2.5rem;
+    width: max-content;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: $border-radius-lg;
+    border: $border-width-default solid $color-slate-200;
+    border-right: none;
+
+    @include md {
+        width: 400px;
+    }
+}
+
+.dashboard-layout__search-input {
+    height: 100%;
+    width: 66.666667%;
+    appearance: none;
+    border: none;
+    box-shadow: none;
+
+    &:focus-visible {
+        box-shadow: none;
+        outline: none;
+    }
+
+    @include md {
+        width: 66.666667%;
+    }
+
+    @include lg {
+        width: 100%;
+    }
+}
+
+.dashboard-layout__search-btn {
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 $border-radius-lg $border-radius-lg 0;
+    background-color: $color-primary;
+    padding: 0 21px;
+}
+
+.dashboard-layout__search-icon {
+    height: 1rem;
+    width: 1rem;
+    color: $color-bg-white;
+}
+
+.dashboard-layout__docs-link {
+    display: none;
+    font-size: $font-size-base;
+    color: $color-secondary;
+    text-decoration: underline;
+
+    @include md {
+        display: block;
+    }
+}
+
+.dashboard-layout__avatar {
+    height: 30px; // Smaller specific size for button integration
+    width: 30px;
+    background-color: rgba($color-secondary, 0.2);
+    margin-right: $spacing-2;
+
+    @include md {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.dashboard-layout__user-btn {
+    height: auto;
+    padding: 0;
+    font-weight: $font-weight-medium;
+    color: $color-secondary;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        background-color: transparent;
+        color: $color-secondary;
+    }
+}
+
+.dashboard-layout__user-name {
+    display: none; // Hidden by default on very small screens (< 414px)
+
+    @media (min-width: 414px) {
+        display: block;
+    }
+}
+
+.dashboard-layout__user-icon {
+    display: none;
+
+    @media (min-width: 414px) {
+        display: block;
+    }
+}
+
+.dashboard-layout__main {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+    gap: $spacing-4;
+    overflow-y: auto;
+    padding: $spacing-4;
+
+    @include lg {
+        padding: $spacing-7;
+    }
+}
+
+// Mobile menu button
+.dashboard-layout__mobile-menu-btn {
+    flex-shrink: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    @include md {
+        display: none;
+    }
+}

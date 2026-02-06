@@ -1,0 +1,225 @@
+// ==========================================================================
+// Reset - CSS Normalize and Base Styles
+// ==========================================================================
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// -----------------------------------------------------------------------------
+// 1. Aggressive Reset (The "clean slate")
+// -----------------------------------------------------------------------------
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// -----------------------------------------------------------------------------
+// 2. Document & Body
+// -----------------------------------------------------------------------------
+
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    background-color: $color-bg-primary;
+    min-height: 100%;
+}
+
+body {
+    line-height: inherit;
+    background-color: $color-bg-primary;
+    color: $color-text-muted; // Set default text color
+    min-height: 100%;
+}
+
+// -----------------------------------------------------------------------------
+// 3. Media & Block Elements
+// -----------------------------------------------------------------------------
+
+// Global Scrollbar (Matches original globals.css)
+* {
+    @include custom-scrollbar;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+    display: block; // Removes bottom space in some browsers
+    vertical-align: middle;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+// -----------------------------------------------------------------------------
+// 4. Typography
+// -----------------------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+// -----------------------------------------------------------------------------
+// 5. Lists
+// -----------------------------------------------------------------------------
+
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+// -----------------------------------------------------------------------------
+// 6. Tables
+// -----------------------------------------------------------------------------
+
+table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+}
+
+// -----------------------------------------------------------------------------
+// 7. Forms
+// -----------------------------------------------------------------------------
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    background: transparent;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+    border: none; // Reset default border
+    cursor: pointer; // Enforce pointer cursor
+}
+
+:-moz-focusring {
+    outline: auto;
+}
+
+:-moz-ui-invalid {
+    box-shadow: none;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type='search'] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+// -----------------------------------------------------------------------------
+// 8. Misc
+// -----------------------------------------------------------------------------
+
+hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+}
+
+abbr:where([title]) {
+    text-decoration: underline dotted;
+}
+
+[hidden] {
+    display: none;
+}
+
+// -----------------------------------------------------------------------------
+// 9. Animations (Global)
+// -----------------------------------------------------------------------------
+@include define-animations;
