@@ -31,7 +31,7 @@
 
 ## Lendsqr
 
-![lendsqr](https://github.com/heysolomon/lendsqr-fe-test/assets/59674245/41c1dcc8-a3c0-4933-aa97-2e11663d9ccf)
+<img width="1424" height="844" alt="Screenshot 2026-02-06 at 6 04 48 PM" src="https://github.com/user-attachments/assets/3b65a1d2-1443-4662-ad33-00acd0c8f47b" />
 
 ### Built With
 
@@ -102,13 +102,15 @@ _Below are steps to follow to view the live website._
    ```sh
    https://solomon-victor-akuson-lendsqr-fe-test.vercel.app/
    ```
-   ![Login page](https://github.com/heysolomon/lendsqr-fe-test/assets/59674245/8f9febfa-acd3-4949-b8ad-aab322c3818c)
+   <img width="1424" height="844" alt="Screenshot 2026-02-06 at 6 04 48 PM" src="https://github.com/user-attachments/assets/3b65a1d2-1443-4662-ad33-00acd0c8f47b" />
 
 2. Fill the login credentials. Only client-side validation is done on them, so make sure you enter a valid email address and a password that's at least 6 characters long with the addition of special characters in them. Once you click on the submit button, you will be redirected to the ```/dashboard/users``` where it has a list of user records. It pulls from a mock API with 500 records.
-![dashboard](https://github.com/heysolomon/lendsqr-fe-test/assets/59674245/fe64615a-b86f-46b2-aa33-bb8c85b771c1)
+
+<img width="1430" height="842" alt="Screenshot 2026-02-06 at 6 04 23 PM" src="https://github.com/user-attachments/assets/ccb089f4-e5b2-4f1b-a4e9-332983fd7337" />
 
 3. Click on an organisation name from the listed records to be directed to the organisation details page.
-   ![user details page](https://github.com/heysolomon/lendsqr-fe-test/assets/59674245/a8b5f174-13b8-4089-92bf-2ce7ad60e9bd)
+
+<img width="1427" height="854" alt="Screenshot 2026-02-06 at 6 04 35 PM" src="https://github.com/user-attachments/assets/a746b445-a6cb-4de3-ab10-6424d921ce13" />
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
