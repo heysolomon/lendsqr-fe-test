@@ -338,7 +338,7 @@
 // Scrollbar Styling
 // -----------------------------------------------------------------------------
 
-@mixin custom-scrollbar($width: 4px, $thumb-color: $color-secondary) {
+@mixin custom-scrollbar($width: 4px, $thumb-color: $color-slate-200) {
     &::-webkit-scrollbar {
         width: $width;
     }
@@ -353,7 +353,7 @@
     }
 }
 
-@mixin horizontal-scrollbar($height: 2px, $thumb-color: $color-secondary) {
+@mixin horizontal-scrollbar($height: 2px, $thumb-color: $color-slate-200) {
     &::-webkit-scrollbar {
         height: $height;
     }
