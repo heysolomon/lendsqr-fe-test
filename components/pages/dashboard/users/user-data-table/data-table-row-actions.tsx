@@ -38,7 +38,7 @@ export function DataTableRowActions<TData>({
           <span className="sr-only">Open menu</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="data-table-row-actions__menu-content">
+      <DropdownMenuContent>
         <DropdownMenuItem className="data-table-row-actions__menu-item">
           <Image
             src="/assets/icons/eye-icon.svg"
@@ -48,21 +48,21 @@ export function DataTableRowActions<TData>({
           />{" "}
           <p className="data-table-row-actions__menu-text">View Details</p>
         </DropdownMenuItem>
-        <DropdownMenuItem className="items-center gap-[8px] p-2.5">
+        <DropdownMenuItem className="data-table-row-actions__menu-item">
           <Image
-            src="/assets/icons/blacklist-icon.png"
+            src="/assets/icons/blacklist-icon.svg"
             width={16}
             height={16}
-            alt="eye-icon"
+            alt="blacklist-icon"
           />{" "}
           <p className="data-table-row-actions__menu-text">Blacklist User</p>
         </DropdownMenuItem>
-        <DropdownMenuItem className="items-center gap-[8px] p-2.5">
+        <DropdownMenuItem className="data-table-row-actions__menu-item">
           <Image
-            src="/assets/icons/activate-user-icon.png"
+            src="/assets/icons/activate-user-icon.svg"
             width={16}
             height={16}
-            alt="eye-icon"
+            alt="activate-user-icon"
           />{" "}
           <p className="data-table-row-actions__menu-text">Activate User</p>
         </DropdownMenuItem>
