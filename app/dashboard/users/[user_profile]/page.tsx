@@ -1,6 +1,13 @@
+"use client";
+
 import React from "react";
+import { useUser } from "@/components/pages/dashboard/users/user-context";
 
 const Page = () => {
+  const user = useUser();
+
+  if (!user) return null;
+
   return (
     <div className="user-profile">
       <div className="user-profile__section">
@@ -11,43 +18,43 @@ const Page = () => {
           <div className="user-profile__item">
             <p className="user-profile__label">full Name</p>
             <p className="user-profile__value">
-              Grace Effiom
+              {user.full_name}
             </p>
           </div>
           <div className="user-profile__item">
             <p className="user-profile__label">Phone Number</p>
             <p className="user-profile__value">
-              07060780922
+              {user.phone_number}
             </p>
           </div>
           <div className="user-profile__item">
-            <p className="user-profile__label">Email Addressr</p>
+            <p className="user-profile__label">Email Address</p>
             <p className="user-profile__value">
-              grace@gmail.com
+              {user.email}
             </p>
           </div>
           <div className="user-profile__item">
             <p className="user-profile__label">Bvn</p>
             <p className="user-profile__value">
-              07060780922
+              {user.bvn}
             </p>
           </div>
           <div className="user-profile__item">
             <p className="user-profile__label">Gender</p>
             <p className="user-profile__value">
-              Female
+              {user.gender}
             </p>
           </div>
           <div className="user-profile__item">
             <p className="user-profile__label">Marital status</p>
             <p className="user-profile__value">
-              Single
+              {user.marital_status}
             </p>
           </div>
           <div className="user-profile__item">
             <p className="user-profile__label">Children</p>
             <p className="user-profile__value">
-              None
+              {user.children}
             </p>
           </div>
           <div className="user-profile__item">
@@ -55,7 +62,7 @@ const Page = () => {
               Type of residence
             </p>
             <p className="user-profile__value">
-              Parent’s Apartment
+              {user.residence_type}
             </p>
           </div>
         </div>
@@ -70,7 +77,7 @@ const Page = () => {
               level of education
             </p>
             <p className="user-profile__value">
-              B.Sc
+              {user.education_level}
             </p>
           </div>
           <div className="user-profile__item">
@@ -78,7 +85,7 @@ const Page = () => {
               employment status
             </p>
             <p className="user-profile__value">
-              Employed
+              {user.employment_status}
             </p>
           </div>
           <div className="user-profile__item">
@@ -86,7 +93,7 @@ const Page = () => {
               sector of employment
             </p>
             <p className="user-profile__value">
-              FinTech
+              {user.sector_of_employment}
             </p>
           </div>
           <div className="user-profile__item">
@@ -94,25 +101,25 @@ const Page = () => {
               Duration of employment
             </p>
             <p className="user-profile__value">
-              2 years
+              {user.duration_of_employment}
             </p>
           </div>
           <div className="user-profile__item">
             <p className="user-profile__label">office email</p>
             <p className="user-profile__value">
-              grace@lendsqr.com
+              {user.office_email}
             </p>
           </div>
           <div className="user-profile__item">
             <p className="user-profile__label">Monthly income</p>
             <p className="user-profile__value">
-              ₦200,000.00- ₦400,000.00
+              {user.monthly_income}
             </p>
           </div>
           <div className="user-profile__item">
             <p className="user-profile__label">loan repayment</p>
             <p className="user-profile__value">
-              40,000
+              {user.loan_repayment}
             </p>
           </div>
         </div>
@@ -125,19 +132,19 @@ const Page = () => {
           <div className="user-profile__item">
             <p className="user-profile__label">Twitter</p>
             <p className="user-profile__value">
-              @grace_effiom
+              {user.twitter}
             </p>
           </div>
           <div className="user-profile__item">
             <p className="user-profile__label">Facebook</p>
             <p className="user-profile__value">
-              Grace Effiom
+              {user.facebook}
             </p>
           </div>
           <div className="user-profile__item">
             <p className="user-profile__label">Instagram</p>
             <p className="user-profile__value">
-              @grace_effiom
+              {user.instagram}
             </p>
           </div>
         </div>
@@ -146,58 +153,62 @@ const Page = () => {
         <h4 className="user-profile__title">
           Guarantor
         </h4>
-        <div className="user-profile__grid user-profile__grid--guarantor">
-          <div className="user-profile__item">
-            <p className="user-profile__label">full Name</p>
-            <p className="user-profile__value">
-              Debby Ogana
-            </p>
+        {user.guarantors && user.guarantors.length > 0 && (
+          <div className="user-profile__grid user-profile__grid--guarantor">
+            <div className="user-profile__item">
+              <p className="user-profile__label">full Name</p>
+              <p className="user-profile__value">
+                {user.guarantors[0].full_name}
+              </p>
+            </div>
+            <div className="user-profile__item">
+              <p className="user-profile__label">Phone Number</p>
+              <p className="user-profile__value">
+                {user.guarantors[0].phone_number}
+              </p>
+            </div>
+            <div className="user-profile__item">
+              <p className="user-profile__label">Relationship</p>
+              <p className="user-profile__value">
+                {user.guarantors[0].relationship}
+              </p>
+            </div>
+            <div className="user-profile__item">
+              <p className="user-profile__label">Email Address</p>
+              <p className="user-profile__value">
+                {user.guarantors[0].email}
+              </p>
+            </div>
           </div>
-          <div className="user-profile__item">
-            <p className="user-profile__label">Phone Number</p>
-            <p className="user-profile__value">
-              07060780922
-            </p>
+        )}
+        {user.guarantors && user.guarantors.length > 1 && (
+          <div className="user-profile__grid-row-2">
+            <div className="user-profile__item">
+              <p className="user-profile__label">full Name</p>
+              <p className="user-profile__value">
+                {user.guarantors[1].full_name}
+              </p>
+            </div>
+            <div className="user-profile__item">
+              <p className="user-profile__label">Phone Number</p>
+              <p className="user-profile__value">
+                {user.guarantors[1].phone_number}
+              </p>
+            </div>
+            <div className="user-profile__item">
+              <p className="user-profile__label">Relationship</p>
+              <p className="user-profile__value">
+                {user.guarantors[1].relationship}
+              </p>
+            </div>
+            <div className="user-profile__item">
+              <p className="user-profile__label">Email Address</p>
+              <p className="user-profile__value">
+                {user.guarantors[1].email}
+              </p>
+            </div>
           </div>
-          <div className="user-profile__item">
-            <p className="user-profile__label">Relationship</p>
-            <p className="user-profile__value">
-              Sister
-            </p>
-          </div>
-          <div className="user-profile__item">
-            <p className="user-profile__label">Email Address</p>
-            <p className="user-profile__value">
-              debby@gmail.com
-            </p>
-          </div>
-        </div>
-        <div className="user-profile__grid-row-2">
-          <div className="user-profile__item">
-            <p className="user-profile__label">full Name</p>
-            <p className="user-profile__value">
-              Debby Ogana
-            </p>
-          </div>
-          <div className="user-profile__item">
-            <p className="user-profile__label">Phone Number</p>
-            <p className="user-profile__value">
-              07060780922
-            </p>
-          </div>
-          <div className="user-profile__item">
-            <p className="user-profile__label">Relationship</p>
-            <p className="user-profile__value">
-              Sister
-            </p>
-          </div>
-          <div className="user-profile__item">
-            <p className="user-profile__label">Email Address</p>
-            <p className="user-profile__value">
-              debby@gmail.com
-            </p>
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );

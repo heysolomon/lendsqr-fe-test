@@ -8,10 +8,30 @@ import userWithLoanIcon from "@/public/assets/icons/users-with-loans-icon.svg";
 import userWithSavingsIcon from "@/public/assets/icons/users-with-savings-icon.svg";
 import { DataTable } from "@/components/pages/dashboard/users/user-data-table/data-table";
 import { columns } from "@/components/pages/dashboard/users/user-data-table/columns";
-import { mockUsers } from "@/components/pages/dashboard/users/user-data-table/mock-users";
+import { getUsers, User } from "@/lib/api";
 
 const Page = () => {
-  const localData = mockUsers;
+  const [users, setUsers] = useState<User[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const data = await getUsers();
+        setUsers(data);
+      } catch (error) {
+        console.error("Failed to fetch users:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchUsers();
+  }, []);
+
+  if (loading) {
+    return <div className="users-page__loading">Loading users...</div>;
+  }
 
   return (
     <div className="users-page">
@@ -20,7 +40,7 @@ const Page = () => {
         {/* users */}
         <UserInfoCard
           title="users"
-          content={`${localData?.length}`}
+          content={`${users.length}`}
           iconVariant="pink"
           icon={userIcon}
         />
@@ -28,7 +48,7 @@ const Page = () => {
         {/* active users */}
         <UserInfoCard
           title="Active Users"
-          content={`${localData?.length}`}
+          content={`${users.length}`} // In a real app, filtering logic would go here
           iconVariant="purple"
           icon={activeUserIcon}
         />
@@ -36,7 +56,7 @@ const Page = () => {
         {/* users with loan */}
         <UserInfoCard
           title="Users with Loans"
-          content="2,453"
+          content="12,453"
           iconVariant="orange"
           icon={userWithLoanIcon}
         />
@@ -44,12 +64,12 @@ const Page = () => {
         {/* Users with savings */}
         <UserInfoCard
           title="Users with Savings"
-          content="2,453"
+          content="102,453"
           iconVariant="coral"
           icon={userWithSavingsIcon}
         />
       </div>
-      {localData && <DataTable data={localData} columns={columns} />}
+      {users && <DataTable data={users} columns={columns} />}
     </div>
   );
 };

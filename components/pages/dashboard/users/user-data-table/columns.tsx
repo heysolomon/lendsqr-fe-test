@@ -20,7 +20,7 @@ export const columns: ColumnDef<User>[] = [
         <div className="data-table__cell-content">
           <Link
             className="data-table__link"
-            href={`/dashboard/users/${row.original.organization}`}
+            href={`/dashboard/users/${row.original.username}`}
           >
             {row.getValue("organization")}
           </Link>

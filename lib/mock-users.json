@@ -1,0 +1,2002 @@
+[
+    {
+        "_id": "v8uvkupxito",
+        "index": 0,
+        "organization": "Lendsqr",
+        "username": "barbara",
+        "email": "barbarawilson@navir.com",
+        "phone_number": "+234(975) 115-2909",
+        "date_joined": "Sep 21 2023, 05:26 PM",
+        "status": "inactive",
+        "full_name": "Barbara Wilson",
+        "bvn": 2479623373,
+        "gender": "Male",
+        "marital_status": "Divorced",
+        "children": 1,
+        "residence_type": "Parent’s Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "FinTech",
+        "duration_of_employment": "4 years",
+        "office_email": "barbarawilson@navir.com",
+        "monthly_income": "₦430,211 - ₦824,380",
+        "loan_repayment": "26,229.70",
+        "twitter": "@barbara",
+        "facebook": "Barbara Wilson",
+        "instagram": "@barbara",
+        "guarantors": [
+            {
+                "full_name": "Thomas Smith",
+                "phone_number": "+234(938) 109-6935",
+                "relationship": "Friend",
+                "email": "guarantor0a@navir.com"
+            },
+            {
+                "full_name": "Richard Williams",
+                "phone_number": "+234(904) 643-3992",
+                "relationship": "Friend",
+                "email": "guarantor0b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "pbre1cu3rzg",
+        "index": 1,
+        "organization": "Irorun",
+        "username": "richard",
+        "email": "richardlopez@navir.com",
+        "phone_number": "+234(958) 528-8872",
+        "date_joined": "Dec 26 2025, 11:59 AM",
+        "status": "pending",
+        "full_name": "Richard Lopez",
+        "bvn": 7827158182,
+        "gender": "Female",
+        "marital_status": "Single",
+        "children": "None",
+        "residence_type": "Own Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "FinTech",
+        "duration_of_employment": "4 years",
+        "office_email": "richardlopez@navir.com",
+        "monthly_income": "₦396,623 - ₦744,389",
+        "loan_repayment": "24,250.73",
+        "twitter": "@richard",
+        "facebook": "Richard Lopez",
+        "instagram": "@richard",
+        "guarantors": [
+            {
+                "full_name": "Susan Moore",
+                "phone_number": "+234(991) 342-3764",
+                "relationship": "Parent",
+                "email": "guarantor1a@navir.com"
+            },
+            {
+                "full_name": "Linda Anderson",
+                "phone_number": "+234(905) 540-2717",
+                "relationship": "Parent",
+                "email": "guarantor1b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "d34lrx01vnu",
+        "index": 2,
+        "organization": "Lendsqr",
+        "username": "karen",
+        "email": "karenbrown@navir.com",
+        "phone_number": "+234(803) 868-4492",
+        "date_joined": "Sep 24 2023, 09:31 AM",
+        "status": "pending",
+        "full_name": "Karen Brown",
+        "bvn": 7051703592,
+        "gender": "Female",
+        "marital_status": "Single",
+        "children": 3,
+        "residence_type": "Rented Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Employed",
+        "sector_of_employment": "Agriculture",
+        "duration_of_employment": "5 years",
+        "office_email": "karenbrown@navir.com",
+        "monthly_income": "₦177,567 - ₦683,499",
+        "loan_repayment": "21,560.50",
+        "twitter": "@karen",
+        "facebook": "Karen Brown",
+        "instagram": "@karen",
+        "guarantors": [
+            {
+                "full_name": "Mary Garcia",
+                "phone_number": "+234(916) 754-5688",
+                "relationship": "Brother",
+                "email": "guarantor2a@navir.com"
+            },
+            {
+                "full_name": "Jennifer Gonzalez",
+                "phone_number": "+234(927) 385-5667",
+                "relationship": "Parent",
+                "email": "guarantor2b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "7020mohoq28",
+        "index": 3,
+        "organization": "Irorun",
+        "username": "michael",
+        "email": "michaeljackson@navir.com",
+        "phone_number": "+234(834) 968-6825",
+        "date_joined": "Aug 17 2025, 03:34 AM",
+        "status": "active",
+        "full_name": "Michael Jackson",
+        "bvn": 4043718933,
+        "gender": "Female",
+        "marital_status": "Married",
+        "children": 2,
+        "residence_type": "Parent’s Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Self-employed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "4 years",
+        "office_email": "michaeljackson@navir.com",
+        "monthly_income": "₦135,788 - ₦846,515",
+        "loan_repayment": "83,122.47",
+        "twitter": "@michael",
+        "facebook": "Michael Jackson",
+        "instagram": "@michael",
+        "guarantors": [
+            {
+                "full_name": "James Williams",
+                "phone_number": "+234(834) 476-2361",
+                "relationship": "Sister",
+                "email": "guarantor3a@navir.com"
+            },
+            {
+                "full_name": "Michael Johnson",
+                "phone_number": "+234(825) 619-7665",
+                "relationship": "Friend",
+                "email": "guarantor3b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "lplgedwhfrn",
+        "index": 4,
+        "organization": "Irorun",
+        "username": "jennifer",
+        "email": "jenniferlopez@navir.com",
+        "phone_number": "+234(929) 943-6360",
+        "date_joined": "Oct 2 2023, 12:31 PM",
+        "status": "blacklisted",
+        "full_name": "Jennifer Lopez",
+        "bvn": 2521081069,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": "None",
+        "residence_type": "Parent’s Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Technology",
+        "duration_of_employment": "2 years",
+        "office_email": "jenniferlopez@navir.com",
+        "monthly_income": "₦335,813 - ₦797,755",
+        "loan_repayment": "31,727.49",
+        "twitter": "@jennifer",
+        "facebook": "Jennifer Lopez",
+        "instagram": "@jennifer",
+        "guarantors": [
+            {
+                "full_name": "Robert Davis",
+                "phone_number": "+234(842) 230-7777",
+                "relationship": "Friend",
+                "email": "guarantor4a@navir.com"
+            },
+            {
+                "full_name": "Elizabeth Gonzalez",
+                "phone_number": "+234(989) 490-3998",
+                "relationship": "Colleague",
+                "email": "guarantor4b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "77ohi63v1n9",
+        "index": 5,
+        "organization": "Lendstar",
+        "username": "michael",
+        "email": "michaelhernandez@navir.com",
+        "phone_number": "+234(828) 955-1939",
+        "date_joined": "Jul 20 2025, 04:33 AM",
+        "status": "active",
+        "full_name": "Michael Hernandez",
+        "bvn": 2195212721,
+        "gender": "Male",
+        "marital_status": "Divorced",
+        "children": 4,
+        "residence_type": "Own Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Health",
+        "duration_of_employment": "3 years",
+        "office_email": "michaelhernandez@navir.com",
+        "monthly_income": "₦423,657 - ₦632,709",
+        "loan_repayment": "76,378.50",
+        "twitter": "@michael",
+        "facebook": "Michael Hernandez",
+        "instagram": "@michael",
+        "guarantors": [
+            {
+                "full_name": "Michael Taylor",
+                "phone_number": "+234(990) 820-4759",
+                "relationship": "Colleague",
+                "email": "guarantor5a@navir.com"
+            },
+            {
+                "full_name": "David Martinez",
+                "phone_number": "+234(878) 139-9079",
+                "relationship": "Brother",
+                "email": "guarantor5b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "roewg3tag3",
+        "index": 6,
+        "organization": "Lendsqr",
+        "username": "susan",
+        "email": "susanmoore@navir.com",
+        "phone_number": "+234(810) 406-4428",
+        "date_joined": "Nov 29 2022, 07:05 PM",
+        "status": "blacklisted",
+        "full_name": "Susan Moore",
+        "bvn": 8987465294,
+        "gender": "Female",
+        "marital_status": "Single",
+        "children": 2,
+        "residence_type": "Rented Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Self-employed",
+        "sector_of_employment": "Agriculture",
+        "duration_of_employment": "2 years",
+        "office_email": "susanmoore@navir.com",
+        "monthly_income": "₦425,421 - ₦539,165",
+        "loan_repayment": "44,342.28",
+        "twitter": "@susan",
+        "facebook": "Susan Moore",
+        "instagram": "@susan",
+        "guarantors": [
+            {
+                "full_name": "James Jackson",
+                "phone_number": "+234(910) 827-1594",
+                "relationship": "Sister",
+                "email": "guarantor6a@navir.com"
+            },
+            {
+                "full_name": "Jennifer Moore",
+                "phone_number": "+234(820) 247-5127",
+                "relationship": "Friend",
+                "email": "guarantor6b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "rby0jua7yqs",
+        "index": 7,
+        "organization": "Irorun",
+        "username": "patricia",
+        "email": "patriciabrown@navir.com",
+        "phone_number": "+234(857) 158-2151",
+        "date_joined": "Feb 16 2022, 10:08 PM",
+        "status": "active",
+        "full_name": "Patricia Brown",
+        "bvn": 3307973379,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": "None",
+        "residence_type": "Parent’s Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "1 year",
+        "office_email": "patriciabrown@navir.com",
+        "monthly_income": "₦331,517 - ₦543,726",
+        "loan_repayment": "77,479.85",
+        "twitter": "@patricia",
+        "facebook": "Patricia Brown",
+        "instagram": "@patricia",
+        "guarantors": [
+            {
+                "full_name": "Thomas Williams",
+                "phone_number": "+234(974) 578-2996",
+                "relationship": "Parent",
+                "email": "guarantor7a@navir.com"
+            },
+            {
+                "full_name": "Patricia Rodriguez",
+                "phone_number": "+234(972) 655-3228",
+                "relationship": "Brother",
+                "email": "guarantor7b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "w3fiku2bag",
+        "index": 8,
+        "organization": "Lendsqr",
+        "username": "jennifer",
+        "email": "jenniferjones@navir.com",
+        "phone_number": "+234(851) 434-8924",
+        "date_joined": "Oct 3 2024, 07:00 AM",
+        "status": "blacklisted",
+        "full_name": "Jennifer Jones",
+        "bvn": 7753762418,
+        "gender": "Female",
+        "marital_status": "Single",
+        "children": 1,
+        "residence_type": "Rented Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Self-employed",
+        "sector_of_employment": "Agriculture",
+        "duration_of_employment": "5 years",
+        "office_email": "jenniferjones@navir.com",
+        "monthly_income": "₦161,179 - ₦641,925",
+        "loan_repayment": "77,626.31",
+        "twitter": "@jennifer",
+        "facebook": "Jennifer Jones",
+        "instagram": "@jennifer",
+        "guarantors": [
+            {
+                "full_name": "David Brown",
+                "phone_number": "+234(986) 343-6036",
+                "relationship": "Sister",
+                "email": "guarantor8a@navir.com"
+            },
+            {
+                "full_name": "Joseph Gonzalez",
+                "phone_number": "+234(969) 245-4835",
+                "relationship": "Brother",
+                "email": "guarantor8b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "v45dt9vi2q",
+        "index": 9,
+        "organization": "Lendsqr",
+        "username": "joseph",
+        "email": "josephmartin@navir.com",
+        "phone_number": "+234(912) 715-3967",
+        "date_joined": "Jan 27 2020, 12:41 PM",
+        "status": "blacklisted",
+        "full_name": "Joseph Martin",
+        "bvn": 2335623006,
+        "gender": "Male",
+        "marital_status": "Single",
+        "children": 3,
+        "residence_type": "Own Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Employed",
+        "sector_of_employment": "Agriculture",
+        "duration_of_employment": "3 years",
+        "office_email": "josephmartin@navir.com",
+        "monthly_income": "₦160,666 - ₦840,634",
+        "loan_repayment": "47,138.56",
+        "twitter": "@joseph",
+        "facebook": "Joseph Martin",
+        "instagram": "@joseph",
+        "guarantors": [
+            {
+                "full_name": "Susan Williams",
+                "phone_number": "+234(962) 967-9662",
+                "relationship": "Parent",
+                "email": "guarantor9a@navir.com"
+            },
+            {
+                "full_name": "Barbara Anderson",
+                "phone_number": "+234(971) 911-1672",
+                "relationship": "Parent",
+                "email": "guarantor9b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "27ljfxgn2zz",
+        "index": 10,
+        "organization": "Irorun",
+        "username": "barbara",
+        "email": "barbaraanderson@navir.com",
+        "phone_number": "+234(818) 449-7591",
+        "date_joined": "Jan 14 2021, 11:08 PM",
+        "status": "blacklisted",
+        "full_name": "Barbara Anderson",
+        "bvn": 7106578219,
+        "gender": "Male",
+        "marital_status": "Divorced",
+        "children": 2,
+        "residence_type": "Parent’s Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "3 years",
+        "office_email": "barbaraanderson@navir.com",
+        "monthly_income": "₦200,170 - ₦720,649",
+        "loan_repayment": "75,950.59",
+        "twitter": "@barbara",
+        "facebook": "Barbara Anderson",
+        "instagram": "@barbara",
+        "guarantors": [
+            {
+                "full_name": "Sarah Brown",
+                "phone_number": "+234(805) 184-4530",
+                "relationship": "Sister",
+                "email": "guarantor10a@navir.com"
+            },
+            {
+                "full_name": "Jessica Miller",
+                "phone_number": "+234(889) 252-1796",
+                "relationship": "Sister",
+                "email": "guarantor10b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "130c6kc2e2y",
+        "index": 11,
+        "organization": "Irorun",
+        "username": "james",
+        "email": "jamesthomas@navir.com",
+        "phone_number": "+234(910) 721-1467",
+        "date_joined": "Jun 12 2022, 07:18 AM",
+        "status": "blacklisted",
+        "full_name": "James Thomas",
+        "bvn": 3074134688,
+        "gender": "Male",
+        "marital_status": "Divorced",
+        "children": "None",
+        "residence_type": "Own Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "3 years",
+        "office_email": "jamesthomas@navir.com",
+        "monthly_income": "₦100,985 - ₦753,840",
+        "loan_repayment": "80,165.53",
+        "twitter": "@james",
+        "facebook": "James Thomas",
+        "instagram": "@james",
+        "guarantors": [
+            {
+                "full_name": "John Jackson",
+                "phone_number": "+234(949) 565-6084",
+                "relationship": "Sister",
+                "email": "guarantor11a@navir.com"
+            },
+            {
+                "full_name": "Sarah Rodriguez",
+                "phone_number": "+234(964) 758-5881",
+                "relationship": "Parent",
+                "email": "guarantor11b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "em4f44k9e6e",
+        "index": 12,
+        "organization": "Lendsqr",
+        "username": "linda",
+        "email": "lindalopez@navir.com",
+        "phone_number": "+234(905) 991-2822",
+        "date_joined": "Aug 13 2025, 04:16 PM",
+        "status": "pending",
+        "full_name": "Linda Lopez",
+        "bvn": 2309619095,
+        "gender": "Female",
+        "marital_status": "Divorced",
+        "children": 1,
+        "residence_type": "Parent’s Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "4 years",
+        "office_email": "lindalopez@navir.com",
+        "monthly_income": "₦263,399 - ₦572,676",
+        "loan_repayment": "27,969.44",
+        "twitter": "@linda",
+        "facebook": "Linda Lopez",
+        "instagram": "@linda",
+        "guarantors": [
+            {
+                "full_name": "Susan Thomas",
+                "phone_number": "+234(943) 555-5228",
+                "relationship": "Colleague",
+                "email": "guarantor12a@navir.com"
+            },
+            {
+                "full_name": "William Gonzalez",
+                "phone_number": "+234(977) 595-4139",
+                "relationship": "Brother",
+                "email": "guarantor12b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "tyl8fjcrpgq",
+        "index": 13,
+        "organization": "Lendstar",
+        "username": "david",
+        "email": "davidanderson@navir.com",
+        "phone_number": "+234(818) 354-8356",
+        "date_joined": "Oct 1 2024, 09:21 PM",
+        "status": "inactive",
+        "full_name": "David Anderson",
+        "bvn": 2564216793,
+        "gender": "Female",
+        "marital_status": "Divorced",
+        "children": 4,
+        "residence_type": "Own Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Technology",
+        "duration_of_employment": "4 years",
+        "office_email": "davidanderson@navir.com",
+        "monthly_income": "₦443,683 - ₦785,476",
+        "loan_repayment": "20,545.30",
+        "twitter": "@david",
+        "facebook": "David Anderson",
+        "instagram": "@david",
+        "guarantors": [
+            {
+                "full_name": "Charles Garcia",
+                "phone_number": "+234(996) 532-4971",
+                "relationship": "Parent",
+                "email": "guarantor13a@navir.com"
+            },
+            {
+                "full_name": "Elizabeth Hernandez",
+                "phone_number": "+234(872) 408-2111",
+                "relationship": "Brother",
+                "email": "guarantor13b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "ya6xr0fe89",
+        "index": 14,
+        "organization": "Lendstar",
+        "username": "david",
+        "email": "davidthomas@navir.com",
+        "phone_number": "+234(860) 846-4400",
+        "date_joined": "Nov 18 2021, 03:25 PM",
+        "status": "blacklisted",
+        "full_name": "David Thomas",
+        "bvn": 4145803995,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": 3,
+        "residence_type": "Own Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Employed",
+        "sector_of_employment": "Health",
+        "duration_of_employment": "2 years",
+        "office_email": "davidthomas@navir.com",
+        "monthly_income": "₦436,409 - ₦865,406",
+        "loan_repayment": "15,280.48",
+        "twitter": "@david",
+        "facebook": "David Thomas",
+        "instagram": "@david",
+        "guarantors": [
+            {
+                "full_name": "Jennifer Thomas",
+                "phone_number": "+234(906) 702-3078",
+                "relationship": "Brother",
+                "email": "guarantor14a@navir.com"
+            },
+            {
+                "full_name": "Mary Jones",
+                "phone_number": "+234(807) 983-7888",
+                "relationship": "Friend",
+                "email": "guarantor14b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "b1xtr70vjp",
+        "index": 15,
+        "organization": "Irorun",
+        "username": "patricia",
+        "email": "patriciaanderson@navir.com",
+        "phone_number": "+234(816) 666-4882",
+        "date_joined": "Dec 15 2021, 11:45 PM",
+        "status": "inactive",
+        "full_name": "Patricia Anderson",
+        "bvn": 8600389978,
+        "gender": "Female",
+        "marital_status": "Single",
+        "children": 3,
+        "residence_type": "Parent’s Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Employed",
+        "sector_of_employment": "Agriculture",
+        "duration_of_employment": "4 years",
+        "office_email": "patriciaanderson@navir.com",
+        "monthly_income": "₦363,430 - ₦662,553",
+        "loan_repayment": "10,285.49",
+        "twitter": "@patricia",
+        "facebook": "Patricia Anderson",
+        "instagram": "@patricia",
+        "guarantors": [
+            {
+                "full_name": "John Smith",
+                "phone_number": "+234(877) 356-1268",
+                "relationship": "Parent",
+                "email": "guarantor15a@navir.com"
+            },
+            {
+                "full_name": "David Jones",
+                "phone_number": "+234(981) 526-5295",
+                "relationship": "Friend",
+                "email": "guarantor15b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "djgq664cl97",
+        "index": 16,
+        "organization": "Irorun",
+        "username": "william",
+        "email": "williamrodriguez@navir.com",
+        "phone_number": "+234(904) 853-3595",
+        "date_joined": "Jul 28 2025, 09:28 PM",
+        "status": "active",
+        "full_name": "William Rodriguez",
+        "bvn": 2391913904,
+        "gender": "Male",
+        "marital_status": "Single",
+        "children": 1,
+        "residence_type": "Own Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Employed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "4 years",
+        "office_email": "williamrodriguez@navir.com",
+        "monthly_income": "₦330,344 - ₦667,598",
+        "loan_repayment": "52,296.13",
+        "twitter": "@william",
+        "facebook": "William Rodriguez",
+        "instagram": "@william",
+        "guarantors": [
+            {
+                "full_name": "Patricia Wilson",
+                "phone_number": "+234(831) 731-6228",
+                "relationship": "Friend",
+                "email": "guarantor16a@navir.com"
+            },
+            {
+                "full_name": "John Thomas",
+                "phone_number": "+234(898) 762-9412",
+                "relationship": "Parent",
+                "email": "guarantor16b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "tbl6pk2lz6e",
+        "index": 17,
+        "organization": "Lendsqr",
+        "username": "barbara",
+        "email": "barbaraanderson@navir.com",
+        "phone_number": "+234(933) 434-9121",
+        "date_joined": "Jun 22 2024, 04:49 AM",
+        "status": "pending",
+        "full_name": "Barbara Anderson",
+        "bvn": 7137379752,
+        "gender": "Male",
+        "marital_status": "Single",
+        "children": 1,
+        "residence_type": "Parent’s Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Self-employed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "3 years",
+        "office_email": "barbaraanderson@navir.com",
+        "monthly_income": "₦468,925 - ₦592,132",
+        "loan_repayment": "34,186.72",
+        "twitter": "@barbara",
+        "facebook": "Barbara Anderson",
+        "instagram": "@barbara",
+        "guarantors": [
+            {
+                "full_name": "James Anderson",
+                "phone_number": "+234(800) 245-6654",
+                "relationship": "Brother",
+                "email": "guarantor17a@navir.com"
+            },
+            {
+                "full_name": "Joseph Martinez",
+                "phone_number": "+234(813) 100-8428",
+                "relationship": "Brother",
+                "email": "guarantor17b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "ashcoin51up",
+        "index": 18,
+        "organization": "Irorun",
+        "username": "patricia",
+        "email": "patriciamartin@navir.com",
+        "phone_number": "+234(887) 708-7655",
+        "date_joined": "Jan 14 2020, 09:15 PM",
+        "status": "active",
+        "full_name": "Patricia Martin",
+        "bvn": 5938002275,
+        "gender": "Female",
+        "marital_status": "Married",
+        "children": "None",
+        "residence_type": "Own Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Employed",
+        "sector_of_employment": "FinTech",
+        "duration_of_employment": "2 years",
+        "office_email": "patriciamartin@navir.com",
+        "monthly_income": "₦164,109 - ₦695,121",
+        "loan_repayment": "78,626.25",
+        "twitter": "@patricia",
+        "facebook": "Patricia Martin",
+        "instagram": "@patricia",
+        "guarantors": [
+            {
+                "full_name": "Barbara Williams",
+                "phone_number": "+234(929) 947-7807",
+                "relationship": "Parent",
+                "email": "guarantor18a@navir.com"
+            },
+            {
+                "full_name": "Richard Brown",
+                "phone_number": "+234(859) 173-2888",
+                "relationship": "Friend",
+                "email": "guarantor18b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "dlb4yqqlfzc",
+        "index": 19,
+        "organization": "Irorun",
+        "username": "william",
+        "email": "williammartin@navir.com",
+        "phone_number": "+234(916) 529-5985",
+        "date_joined": "Apr 23 2021, 03:09 PM",
+        "status": "inactive",
+        "full_name": "William Martin",
+        "bvn": 5101793000,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": 2,
+        "residence_type": "Parent’s Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "3 years",
+        "office_email": "williammartin@navir.com",
+        "monthly_income": "₦309,374 - ₦602,730",
+        "loan_repayment": "65,219.25",
+        "twitter": "@william",
+        "facebook": "William Martin",
+        "instagram": "@william",
+        "guarantors": [
+            {
+                "full_name": "James Martin",
+                "phone_number": "+234(981) 964-9218",
+                "relationship": "Colleague",
+                "email": "guarantor19a@navir.com"
+            },
+            {
+                "full_name": "Sarah Moore",
+                "phone_number": "+234(952) 845-1868",
+                "relationship": "Friend",
+                "email": "guarantor19b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "4o32ulmvvv8",
+        "index": 20,
+        "organization": "Irorun",
+        "username": "thomas",
+        "email": "thomaslopez@navir.com",
+        "phone_number": "+234(880) 551-9025",
+        "date_joined": "Feb 8 2025, 09:22 PM",
+        "status": "inactive",
+        "full_name": "Thomas Lopez",
+        "bvn": 1161897679,
+        "gender": "Female",
+        "marital_status": "Single",
+        "children": 3,
+        "residence_type": "Rented Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Employed",
+        "sector_of_employment": "Health",
+        "duration_of_employment": "2 years",
+        "office_email": "thomaslopez@navir.com",
+        "monthly_income": "₦391,596 - ₦580,587",
+        "loan_repayment": "50,606.61",
+        "twitter": "@thomas",
+        "facebook": "Thomas Lopez",
+        "instagram": "@thomas",
+        "guarantors": [
+            {
+                "full_name": "Michael Hernandez",
+                "phone_number": "+234(844) 207-3081",
+                "relationship": "Parent",
+                "email": "guarantor20a@navir.com"
+            },
+            {
+                "full_name": "Barbara Anderson",
+                "phone_number": "+234(913) 756-7913",
+                "relationship": "Colleague",
+                "email": "guarantor20b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "tfeomunwcmj",
+        "index": 21,
+        "organization": "Lendstar",
+        "username": "robert",
+        "email": "robertgonzalez@navir.com",
+        "phone_number": "+234(887) 347-8531",
+        "date_joined": "May 24 2021, 07:35 PM",
+        "status": "pending",
+        "full_name": "Robert Gonzalez",
+        "bvn": 7429332335,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": 2,
+        "residence_type": "Own Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Self-employed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "1 year",
+        "office_email": "robertgonzalez@navir.com",
+        "monthly_income": "₦236,909 - ₦891,419",
+        "loan_repayment": "36,164.97",
+        "twitter": "@robert",
+        "facebook": "Robert Gonzalez",
+        "instagram": "@robert",
+        "guarantors": [
+            {
+                "full_name": "Linda Rodriguez",
+                "phone_number": "+234(974) 216-4890",
+                "relationship": "Sister",
+                "email": "guarantor21a@navir.com"
+            },
+            {
+                "full_name": "Michael Jackson",
+                "phone_number": "+234(843) 600-3245",
+                "relationship": "Sister",
+                "email": "guarantor21b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "oelzdthxocd",
+        "index": 22,
+        "organization": "Lendstar",
+        "username": "mary",
+        "email": "marysmith@navir.com",
+        "phone_number": "+234(838) 295-5608",
+        "date_joined": "May 23 2021, 10:01 PM",
+        "status": "active",
+        "full_name": "Mary Smith",
+        "bvn": 3557824617,
+        "gender": "Female",
+        "marital_status": "Married",
+        "children": 1,
+        "residence_type": "Own Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Employed",
+        "sector_of_employment": "Health",
+        "duration_of_employment": "4 years",
+        "office_email": "marysmith@navir.com",
+        "monthly_income": "₦107,323 - ₦858,936",
+        "loan_repayment": "94,561.66",
+        "twitter": "@mary",
+        "facebook": "Mary Smith",
+        "instagram": "@mary",
+        "guarantors": [
+            {
+                "full_name": "Richard Taylor",
+                "phone_number": "+234(908) 295-8257",
+                "relationship": "Colleague",
+                "email": "guarantor22a@navir.com"
+            },
+            {
+                "full_name": "David Martin",
+                "phone_number": "+234(865) 277-9212",
+                "relationship": "Parent",
+                "email": "guarantor22b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "du4wo3aczef",
+        "index": 23,
+        "organization": "Lendstar",
+        "username": "david",
+        "email": "davidhernandez@navir.com",
+        "phone_number": "+234(860) 217-8973",
+        "date_joined": "Nov 11 2021, 05:51 PM",
+        "status": "inactive",
+        "full_name": "David Hernandez",
+        "bvn": 7603356851,
+        "gender": "Female",
+        "marital_status": "Divorced",
+        "children": 1,
+        "residence_type": "Rented Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Agriculture",
+        "duration_of_employment": "4 years",
+        "office_email": "davidhernandez@navir.com",
+        "monthly_income": "₦451,590 - ₦772,427",
+        "loan_repayment": "34,744.28",
+        "twitter": "@david",
+        "facebook": "David Hernandez",
+        "instagram": "@david",
+        "guarantors": [
+            {
+                "full_name": "Barbara Johnson",
+                "phone_number": "+234(844) 929-6913",
+                "relationship": "Brother",
+                "email": "guarantor23a@navir.com"
+            },
+            {
+                "full_name": "Thomas Johnson",
+                "phone_number": "+234(936) 658-7001",
+                "relationship": "Colleague",
+                "email": "guarantor23b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "k3ysapdw8o9",
+        "index": 24,
+        "organization": "Lendstar",
+        "username": "mary",
+        "email": "marygarcia@navir.com",
+        "phone_number": "+234(975) 888-4754",
+        "date_joined": "Jul 24 2022, 06:49 AM",
+        "status": "blacklisted",
+        "full_name": "Mary Garcia",
+        "bvn": 6281819123,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": 4,
+        "residence_type": "Rented Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "2 years",
+        "office_email": "marygarcia@navir.com",
+        "monthly_income": "₦184,618 - ₦625,719",
+        "loan_repayment": "96,316.83",
+        "twitter": "@mary",
+        "facebook": "Mary Garcia",
+        "instagram": "@mary",
+        "guarantors": [
+            {
+                "full_name": "Karen Davis",
+                "phone_number": "+234(820) 134-3926",
+                "relationship": "Colleague",
+                "email": "guarantor24a@navir.com"
+            },
+            {
+                "full_name": "Linda Brown",
+                "phone_number": "+234(853) 964-4142",
+                "relationship": "Friend",
+                "email": "guarantor24b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "lxigeb2ixxf",
+        "index": 25,
+        "organization": "Lendsqr",
+        "username": "jessica",
+        "email": "jessicathomas@navir.com",
+        "phone_number": "+234(976) 783-4578",
+        "date_joined": "Sep 2 2022, 11:52 AM",
+        "status": "blacklisted",
+        "full_name": "Jessica Thomas",
+        "bvn": 6849407592,
+        "gender": "Female",
+        "marital_status": "Single",
+        "children": 1,
+        "residence_type": "Rented Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Self-employed",
+        "sector_of_employment": "Health",
+        "duration_of_employment": "4 years",
+        "office_email": "jessicathomas@navir.com",
+        "monthly_income": "₦109,796 - ₦583,853",
+        "loan_repayment": "63,354.43",
+        "twitter": "@jessica",
+        "facebook": "Jessica Thomas",
+        "instagram": "@jessica",
+        "guarantors": [
+            {
+                "full_name": "Sarah Rodriguez",
+                "phone_number": "+234(959) 815-6120",
+                "relationship": "Parent",
+                "email": "guarantor25a@navir.com"
+            },
+            {
+                "full_name": "Mary Brown",
+                "phone_number": "+234(979) 488-1122",
+                "relationship": "Friend",
+                "email": "guarantor25b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "wk9byxc4qz",
+        "index": 26,
+        "organization": "Lendsqr",
+        "username": "mary",
+        "email": "marydavis@navir.com",
+        "phone_number": "+234(966) 708-6059",
+        "date_joined": "Jun 17 2024, 09:22 PM",
+        "status": "blacklisted",
+        "full_name": "Mary Davis",
+        "bvn": 5814957687,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": 2,
+        "residence_type": "Rented Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "FinTech",
+        "duration_of_employment": "4 years",
+        "office_email": "marydavis@navir.com",
+        "monthly_income": "₦157,155 - ₦867,691",
+        "loan_repayment": "44,398.84",
+        "twitter": "@mary",
+        "facebook": "Mary Davis",
+        "instagram": "@mary",
+        "guarantors": [
+            {
+                "full_name": "Mary Wilson",
+                "phone_number": "+234(856) 592-6972",
+                "relationship": "Parent",
+                "email": "guarantor26a@navir.com"
+            },
+            {
+                "full_name": "Robert Martinez",
+                "phone_number": "+234(974) 340-9220",
+                "relationship": "Sister",
+                "email": "guarantor26b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "or5qyy3g2o",
+        "index": 27,
+        "organization": "Lendstar",
+        "username": "john",
+        "email": "johnsmith@navir.com",
+        "phone_number": "+234(971) 172-8545",
+        "date_joined": "Jul 28 2022, 12:28 PM",
+        "status": "active",
+        "full_name": "John Smith",
+        "bvn": 4671149180,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": "None",
+        "residence_type": "Parent’s Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Employed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "5 years",
+        "office_email": "johnsmith@navir.com",
+        "monthly_income": "₦234,977 - ₦653,459",
+        "loan_repayment": "67,644.59",
+        "twitter": "@john",
+        "facebook": "John Smith",
+        "instagram": "@john",
+        "guarantors": [
+            {
+                "full_name": "Barbara Jackson",
+                "phone_number": "+234(922) 633-2934",
+                "relationship": "Brother",
+                "email": "guarantor27a@navir.com"
+            },
+            {
+                "full_name": "Jennifer Martin",
+                "phone_number": "+234(903) 931-7408",
+                "relationship": "Colleague",
+                "email": "guarantor27b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "47eidc9byp4",
+        "index": 28,
+        "organization": "Lendstar",
+        "username": "michael",
+        "email": "michaeldavis@navir.com",
+        "phone_number": "+234(819) 278-9994",
+        "date_joined": "Oct 17 2023, 06:52 PM",
+        "status": "blacklisted",
+        "full_name": "Michael Davis",
+        "bvn": 1373951754,
+        "gender": "Female",
+        "marital_status": "Single",
+        "children": "None",
+        "residence_type": "Parent’s Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Employed",
+        "sector_of_employment": "FinTech",
+        "duration_of_employment": "4 years",
+        "office_email": "michaeldavis@navir.com",
+        "monthly_income": "₦106,361 - ₦767,883",
+        "loan_repayment": "86,299.35",
+        "twitter": "@michael",
+        "facebook": "Michael Davis",
+        "instagram": "@michael",
+        "guarantors": [
+            {
+                "full_name": "Joseph Jackson",
+                "phone_number": "+234(908) 563-6022",
+                "relationship": "Parent",
+                "email": "guarantor28a@navir.com"
+            },
+            {
+                "full_name": "Elizabeth Jackson",
+                "phone_number": "+234(890) 847-3710",
+                "relationship": "Sister",
+                "email": "guarantor28b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "8xgwi62ad7f",
+        "index": 29,
+        "organization": "Lendsqr",
+        "username": "john",
+        "email": "johnwilliams@navir.com",
+        "phone_number": "+234(930) 331-7418",
+        "date_joined": "Nov 6 2025, 04:53 AM",
+        "status": "pending",
+        "full_name": "John Williams",
+        "bvn": 2076318365,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": "None",
+        "residence_type": "Rented Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Employed",
+        "sector_of_employment": "Technology",
+        "duration_of_employment": "1 year",
+        "office_email": "johnwilliams@navir.com",
+        "monthly_income": "₦114,713 - ₦718,702",
+        "loan_repayment": "65,820.52",
+        "twitter": "@john",
+        "facebook": "John Williams",
+        "instagram": "@john",
+        "guarantors": [
+            {
+                "full_name": "Mary Taylor",
+                "phone_number": "+234(805) 528-4574",
+                "relationship": "Parent",
+                "email": "guarantor29a@navir.com"
+            },
+            {
+                "full_name": "Barbara Wilson",
+                "phone_number": "+234(961) 873-9219",
+                "relationship": "Friend",
+                "email": "guarantor29b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "oudmelbb2d",
+        "index": 30,
+        "organization": "Irorun",
+        "username": "richard",
+        "email": "richardanderson@navir.com",
+        "phone_number": "+234(915) 734-9021",
+        "date_joined": "Aug 23 2021, 09:28 AM",
+        "status": "inactive",
+        "full_name": "Richard Anderson",
+        "bvn": 9962478883,
+        "gender": "Female",
+        "marital_status": "Single",
+        "children": "None",
+        "residence_type": "Rented Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Self-employed",
+        "sector_of_employment": "Technology",
+        "duration_of_employment": "1 year",
+        "office_email": "richardanderson@navir.com",
+        "monthly_income": "₦174,112 - ₦828,187",
+        "loan_repayment": "39,196.52",
+        "twitter": "@richard",
+        "facebook": "Richard Anderson",
+        "instagram": "@richard",
+        "guarantors": [
+            {
+                "full_name": "Michael Moore",
+                "phone_number": "+234(979) 499-9293",
+                "relationship": "Sister",
+                "email": "guarantor30a@navir.com"
+            },
+            {
+                "full_name": "Thomas Davis",
+                "phone_number": "+234(957) 521-4880",
+                "relationship": "Parent",
+                "email": "guarantor30b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "zgpeof08ges",
+        "index": 31,
+        "organization": "Lendsqr",
+        "username": "sarah",
+        "email": "sarahmartinez@navir.com",
+        "phone_number": "+234(950) 960-2321",
+        "date_joined": "May 23 2021, 02:52 PM",
+        "status": "blacklisted",
+        "full_name": "Sarah Martinez",
+        "bvn": 9326420103,
+        "gender": "Male",
+        "marital_status": "Single",
+        "children": 3,
+        "residence_type": "Rented Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Employed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "2 years",
+        "office_email": "sarahmartinez@navir.com",
+        "monthly_income": "₦292,962 - ₦786,333",
+        "loan_repayment": "85,169.18",
+        "twitter": "@sarah",
+        "facebook": "Sarah Martinez",
+        "instagram": "@sarah",
+        "guarantors": [
+            {
+                "full_name": "John Williams",
+                "phone_number": "+234(862) 763-1463",
+                "relationship": "Colleague",
+                "email": "guarantor31a@navir.com"
+            },
+            {
+                "full_name": "Karen Moore",
+                "phone_number": "+234(869) 354-5839",
+                "relationship": "Friend",
+                "email": "guarantor31b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "if7e5ci0zbo",
+        "index": 32,
+        "organization": "Lendstar",
+        "username": "william",
+        "email": "williamwilliams@navir.com",
+        "phone_number": "+234(825) 483-6289",
+        "date_joined": "Oct 31 2021, 12:45 AM",
+        "status": "active",
+        "full_name": "William Williams",
+        "bvn": 5430666578,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": "None",
+        "residence_type": "Rented Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Agriculture",
+        "duration_of_employment": "4 years",
+        "office_email": "williamwilliams@navir.com",
+        "monthly_income": "₦230,615 - ₦555,810",
+        "loan_repayment": "78,955.73",
+        "twitter": "@william",
+        "facebook": "William Williams",
+        "instagram": "@william",
+        "guarantors": [
+            {
+                "full_name": "William Martinez",
+                "phone_number": "+234(906) 739-4941",
+                "relationship": "Friend",
+                "email": "guarantor32a@navir.com"
+            },
+            {
+                "full_name": "James Johnson",
+                "phone_number": "+234(927) 535-6300",
+                "relationship": "Brother",
+                "email": "guarantor32b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "o2d7f3horjc",
+        "index": 33,
+        "organization": "Lendsqr",
+        "username": "charles",
+        "email": "charlesjackson@navir.com",
+        "phone_number": "+234(905) 226-6424",
+        "date_joined": "Nov 20 2023, 05:43 PM",
+        "status": "blacklisted",
+        "full_name": "Charles Jackson",
+        "bvn": 2717219393,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": 1,
+        "residence_type": "Parent’s Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Self-employed",
+        "sector_of_employment": "Technology",
+        "duration_of_employment": "5 years",
+        "office_email": "charlesjackson@navir.com",
+        "monthly_income": "₦482,353 - ₦591,127",
+        "loan_repayment": "82,399.88",
+        "twitter": "@charles",
+        "facebook": "Charles Jackson",
+        "instagram": "@charles",
+        "guarantors": [
+            {
+                "full_name": "Mary Moore",
+                "phone_number": "+234(852) 869-6101",
+                "relationship": "Sister",
+                "email": "guarantor33a@navir.com"
+            },
+            {
+                "full_name": "Joseph Garcia",
+                "phone_number": "+234(879) 103-6798",
+                "relationship": "Parent",
+                "email": "guarantor33b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "9c9s75t56cg",
+        "index": 34,
+        "organization": "Irorun",
+        "username": "joseph",
+        "email": "josephmiller@navir.com",
+        "phone_number": "+234(990) 378-5572",
+        "date_joined": "Nov 6 2023, 07:18 AM",
+        "status": "active",
+        "full_name": "Joseph Miller",
+        "bvn": 5829494469,
+        "gender": "Male",
+        "marital_status": "Divorced",
+        "children": "None",
+        "residence_type": "Rented Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Self-employed",
+        "sector_of_employment": "Technology",
+        "duration_of_employment": "1 year",
+        "office_email": "josephmiller@navir.com",
+        "monthly_income": "₦248,267 - ₦742,696",
+        "loan_repayment": "60,964.99",
+        "twitter": "@joseph",
+        "facebook": "Joseph Miller",
+        "instagram": "@joseph",
+        "guarantors": [
+            {
+                "full_name": "Sarah Moore",
+                "phone_number": "+234(869) 533-1226",
+                "relationship": "Friend",
+                "email": "guarantor34a@navir.com"
+            },
+            {
+                "full_name": "Joseph Lopez",
+                "phone_number": "+234(866) 308-6069",
+                "relationship": "Colleague",
+                "email": "guarantor34b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "f1jor8gdqdu",
+        "index": 35,
+        "organization": "Lendsqr",
+        "username": "john",
+        "email": "johnanderson@navir.com",
+        "phone_number": "+234(807) 391-4798",
+        "date_joined": "Jan 15 2025, 11:20 AM",
+        "status": "blacklisted",
+        "full_name": "John Anderson",
+        "bvn": 3106065167,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": "None",
+        "residence_type": "Rented Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Health",
+        "duration_of_employment": "4 years",
+        "office_email": "johnanderson@navir.com",
+        "monthly_income": "₦194,882 - ₦592,179",
+        "loan_repayment": "52,146.89",
+        "twitter": "@john",
+        "facebook": "John Anderson",
+        "instagram": "@john",
+        "guarantors": [
+            {
+                "full_name": "Elizabeth Johnson",
+                "phone_number": "+234(802) 745-2798",
+                "relationship": "Friend",
+                "email": "guarantor35a@navir.com"
+            },
+            {
+                "full_name": "Barbara Thomas",
+                "phone_number": "+234(869) 374-1413",
+                "relationship": "Friend",
+                "email": "guarantor35b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "u986657b5ef",
+        "index": 36,
+        "organization": "Lendsqr",
+        "username": "mary",
+        "email": "marygarcia@navir.com",
+        "phone_number": "+234(948) 878-8166",
+        "date_joined": "Dec 9 2025, 01:22 PM",
+        "status": "inactive",
+        "full_name": "Mary Garcia",
+        "bvn": 6242428033,
+        "gender": "Male",
+        "marital_status": "Single",
+        "children": 2,
+        "residence_type": "Rented Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Employed",
+        "sector_of_employment": "FinTech",
+        "duration_of_employment": "3 years",
+        "office_email": "marygarcia@navir.com",
+        "monthly_income": "₦492,692 - ₦596,202",
+        "loan_repayment": "84,621.32",
+        "twitter": "@mary",
+        "facebook": "Mary Garcia",
+        "instagram": "@mary",
+        "guarantors": [
+            {
+                "full_name": "Karen Taylor",
+                "phone_number": "+234(947) 616-4298",
+                "relationship": "Friend",
+                "email": "guarantor36a@navir.com"
+            },
+            {
+                "full_name": "Elizabeth Brown",
+                "phone_number": "+234(926) 181-5827",
+                "relationship": "Colleague",
+                "email": "guarantor36b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "zt10z9d0y9",
+        "index": 37,
+        "organization": "Lendsqr",
+        "username": "richard",
+        "email": "richardrodriguez@navir.com",
+        "phone_number": "+234(891) 164-3091",
+        "date_joined": "Mar 15 2022, 08:34 PM",
+        "status": "active",
+        "full_name": "Richard Rodriguez",
+        "bvn": 3138770145,
+        "gender": "Male",
+        "marital_status": "Divorced",
+        "children": 3,
+        "residence_type": "Parent’s Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Employed",
+        "sector_of_employment": "Agriculture",
+        "duration_of_employment": "5 years",
+        "office_email": "richardrodriguez@navir.com",
+        "monthly_income": "₦386,662 - ₦817,886",
+        "loan_repayment": "80,230.20",
+        "twitter": "@richard",
+        "facebook": "Richard Rodriguez",
+        "instagram": "@richard",
+        "guarantors": [
+            {
+                "full_name": "Robert Smith",
+                "phone_number": "+234(825) 765-5668",
+                "relationship": "Friend",
+                "email": "guarantor37a@navir.com"
+            },
+            {
+                "full_name": "Elizabeth Rodriguez",
+                "phone_number": "+234(981) 526-7888",
+                "relationship": "Brother",
+                "email": "guarantor37b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "m3uljw8ihkm",
+        "index": 38,
+        "organization": "Lendstar",
+        "username": "mary",
+        "email": "maryjones@navir.com",
+        "phone_number": "+234(801) 771-5129",
+        "date_joined": "Aug 14 2021, 11:57 AM",
+        "status": "pending",
+        "full_name": "Mary Jones",
+        "bvn": 5845655497,
+        "gender": "Female",
+        "marital_status": "Divorced",
+        "children": 2,
+        "residence_type": "Own Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Technology",
+        "duration_of_employment": "1 year",
+        "office_email": "maryjones@navir.com",
+        "monthly_income": "₦182,816 - ₦875,521",
+        "loan_repayment": "23,277.77",
+        "twitter": "@mary",
+        "facebook": "Mary Jones",
+        "instagram": "@mary",
+        "guarantors": [
+            {
+                "full_name": "Jennifer Davis",
+                "phone_number": "+234(850) 265-6344",
+                "relationship": "Sister",
+                "email": "guarantor38a@navir.com"
+            },
+            {
+                "full_name": "Barbara Martin",
+                "phone_number": "+234(826) 838-1971",
+                "relationship": "Sister",
+                "email": "guarantor38b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "1xnklpmqsyo",
+        "index": 39,
+        "organization": "Lendstar",
+        "username": "susan",
+        "email": "susanjackson@navir.com",
+        "phone_number": "+234(868) 690-9034",
+        "date_joined": "May 30 2022, 01:58 AM",
+        "status": "blacklisted",
+        "full_name": "Susan Jackson",
+        "bvn": 7650466676,
+        "gender": "Male",
+        "marital_status": "Divorced",
+        "children": 4,
+        "residence_type": "Own Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Technology",
+        "duration_of_employment": "1 year",
+        "office_email": "susanjackson@navir.com",
+        "monthly_income": "₦466,935 - ₦549,918",
+        "loan_repayment": "52,257.76",
+        "twitter": "@susan",
+        "facebook": "Susan Jackson",
+        "instagram": "@susan",
+        "guarantors": [
+            {
+                "full_name": "William Johnson",
+                "phone_number": "+234(823) 604-7860",
+                "relationship": "Friend",
+                "email": "guarantor39a@navir.com"
+            },
+            {
+                "full_name": "William Rodriguez",
+                "phone_number": "+234(894) 251-8827",
+                "relationship": "Colleague",
+                "email": "guarantor39b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "zd9szdx0k6",
+        "index": 40,
+        "organization": "Lendsqr",
+        "username": "barbara",
+        "email": "barbarajones@navir.com",
+        "phone_number": "+234(836) 306-4679",
+        "date_joined": "Jan 13 2020, 02:56 PM",
+        "status": "active",
+        "full_name": "Barbara Jones",
+        "bvn": 6801687468,
+        "gender": "Female",
+        "marital_status": "Divorced",
+        "children": 2,
+        "residence_type": "Rented Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "FinTech",
+        "duration_of_employment": "4 years",
+        "office_email": "barbarajones@navir.com",
+        "monthly_income": "₦207,556 - ₦897,763",
+        "loan_repayment": "29,615.48",
+        "twitter": "@barbara",
+        "facebook": "Barbara Jones",
+        "instagram": "@barbara",
+        "guarantors": [
+            {
+                "full_name": "James Smith",
+                "phone_number": "+234(812) 192-8457",
+                "relationship": "Brother",
+                "email": "guarantor40a@navir.com"
+            },
+            {
+                "full_name": "Susan Smith",
+                "phone_number": "+234(979) 505-6138",
+                "relationship": "Sister",
+                "email": "guarantor40b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "bvlhwsqosq",
+        "index": 41,
+        "organization": "Lendstar",
+        "username": "william",
+        "email": "williamsmith@navir.com",
+        "phone_number": "+234(851) 875-6518",
+        "date_joined": "Apr 28 2025, 06:05 PM",
+        "status": "blacklisted",
+        "full_name": "William Smith",
+        "bvn": 1838135756,
+        "gender": "Female",
+        "marital_status": "Divorced",
+        "children": 2,
+        "residence_type": "Rented Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Employed",
+        "sector_of_employment": "Health",
+        "duration_of_employment": "3 years",
+        "office_email": "williamsmith@navir.com",
+        "monthly_income": "₦418,469 - ₦668,701",
+        "loan_repayment": "46,740.45",
+        "twitter": "@william",
+        "facebook": "William Smith",
+        "instagram": "@william",
+        "guarantors": [
+            {
+                "full_name": "James Lopez",
+                "phone_number": "+234(933) 216-9362",
+                "relationship": "Brother",
+                "email": "guarantor41a@navir.com"
+            },
+            {
+                "full_name": "David Garcia",
+                "phone_number": "+234(862) 240-4057",
+                "relationship": "Sister",
+                "email": "guarantor41b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "k2431i72ah",
+        "index": 42,
+        "organization": "Lendsqr",
+        "username": "mary",
+        "email": "marylopez@navir.com",
+        "phone_number": "+234(870) 281-5322",
+        "date_joined": "Dec 2 2022, 11:15 PM",
+        "status": "pending",
+        "full_name": "Mary Lopez",
+        "bvn": 6851506600,
+        "gender": "Female",
+        "marital_status": "Divorced",
+        "children": 1,
+        "residence_type": "Parent’s Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Health",
+        "duration_of_employment": "1 year",
+        "office_email": "marylopez@navir.com",
+        "monthly_income": "₦231,630 - ₦744,157",
+        "loan_repayment": "84,370.42",
+        "twitter": "@mary",
+        "facebook": "Mary Lopez",
+        "instagram": "@mary",
+        "guarantors": [
+            {
+                "full_name": "Michael Johnson",
+                "phone_number": "+234(843) 935-5051",
+                "relationship": "Sister",
+                "email": "guarantor42a@navir.com"
+            },
+            {
+                "full_name": "Jennifer Davis",
+                "phone_number": "+234(864) 888-1349",
+                "relationship": "Friend",
+                "email": "guarantor42b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "29lxab8mczd",
+        "index": 43,
+        "organization": "Lendstar",
+        "username": "karen",
+        "email": "karenjohnson@navir.com",
+        "phone_number": "+234(841) 199-8275",
+        "date_joined": "Aug 4 2021, 02:50 PM",
+        "status": "blacklisted",
+        "full_name": "Karen Johnson",
+        "bvn": 8295687317,
+        "gender": "Female",
+        "marital_status": "Divorced",
+        "children": 1,
+        "residence_type": "Parent’s Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Self-employed",
+        "sector_of_employment": "Agriculture",
+        "duration_of_employment": "1 year",
+        "office_email": "karenjohnson@navir.com",
+        "monthly_income": "₦336,385 - ₦724,167",
+        "loan_repayment": "61,407.40",
+        "twitter": "@karen",
+        "facebook": "Karen Johnson",
+        "instagram": "@karen",
+        "guarantors": [
+            {
+                "full_name": "John Martinez",
+                "phone_number": "+234(893) 255-3214",
+                "relationship": "Colleague",
+                "email": "guarantor43a@navir.com"
+            },
+            {
+                "full_name": "Joseph Wilson",
+                "phone_number": "+234(990) 821-1348",
+                "relationship": "Colleague",
+                "email": "guarantor43b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "h0hkpwank9",
+        "index": 44,
+        "organization": "Lendstar",
+        "username": "richard",
+        "email": "richardjohnson@navir.com",
+        "phone_number": "+234(988) 890-7035",
+        "date_joined": "Aug 26 2020, 05:41 PM",
+        "status": "blacklisted",
+        "full_name": "Richard Johnson",
+        "bvn": 8239342457,
+        "gender": "Female",
+        "marital_status": "Married",
+        "children": "None",
+        "residence_type": "Parent’s Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Employed",
+        "sector_of_employment": "Agriculture",
+        "duration_of_employment": "3 years",
+        "office_email": "richardjohnson@navir.com",
+        "monthly_income": "₦207,387 - ₦558,583",
+        "loan_repayment": "64,753.82",
+        "twitter": "@richard",
+        "facebook": "Richard Johnson",
+        "instagram": "@richard",
+        "guarantors": [
+            {
+                "full_name": "Mary Smith",
+                "phone_number": "+234(915) 576-3249",
+                "relationship": "Parent",
+                "email": "guarantor44a@navir.com"
+            },
+            {
+                "full_name": "Sarah Williams",
+                "phone_number": "+234(868) 325-4637",
+                "relationship": "Parent",
+                "email": "guarantor44b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "iw9j5fbzsz",
+        "index": 45,
+        "organization": "Lendstar",
+        "username": "joseph",
+        "email": "josephjohnson@navir.com",
+        "phone_number": "+234(889) 496-3964",
+        "date_joined": "Feb 14 2023, 01:49 PM",
+        "status": "inactive",
+        "full_name": "Joseph Johnson",
+        "bvn": 7799471755,
+        "gender": "Male",
+        "marital_status": "Divorced",
+        "children": "None",
+        "residence_type": "Rented Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Technology",
+        "duration_of_employment": "4 years",
+        "office_email": "josephjohnson@navir.com",
+        "monthly_income": "₦480,414 - ₦746,813",
+        "loan_repayment": "22,617.29",
+        "twitter": "@joseph",
+        "facebook": "Joseph Johnson",
+        "instagram": "@joseph",
+        "guarantors": [
+            {
+                "full_name": "Charles Johnson",
+                "phone_number": "+234(863) 162-7634",
+                "relationship": "Sister",
+                "email": "guarantor45a@navir.com"
+            },
+            {
+                "full_name": "William Jones",
+                "phone_number": "+234(972) 382-1896",
+                "relationship": "Friend",
+                "email": "guarantor45b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "lbuy53ye5ul",
+        "index": 46,
+        "organization": "Irorun",
+        "username": "barbara",
+        "email": "barbaramoore@navir.com",
+        "phone_number": "+234(941) 914-8573",
+        "date_joined": "Jan 12 2020, 04:31 PM",
+        "status": "pending",
+        "full_name": "Barbara Moore",
+        "bvn": 8528181246,
+        "gender": "Female",
+        "marital_status": "Single",
+        "children": 3,
+        "residence_type": "Rented Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Self-employed",
+        "sector_of_employment": "Technology",
+        "duration_of_employment": "2 years",
+        "office_email": "barbaramoore@navir.com",
+        "monthly_income": "₦374,333 - ₦877,675",
+        "loan_repayment": "31,274.13",
+        "twitter": "@barbara",
+        "facebook": "Barbara Moore",
+        "instagram": "@barbara",
+        "guarantors": [
+            {
+                "full_name": "Patricia Anderson",
+                "phone_number": "+234(966) 976-3917",
+                "relationship": "Parent",
+                "email": "guarantor46a@navir.com"
+            },
+            {
+                "full_name": "William Hernandez",
+                "phone_number": "+234(983) 688-6460",
+                "relationship": "Colleague",
+                "email": "guarantor46b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "usezg7xhu6n",
+        "index": 47,
+        "organization": "Lendsqr",
+        "username": "susan",
+        "email": "susanbrown@navir.com",
+        "phone_number": "+234(851) 407-5882",
+        "date_joined": "Dec 5 2024, 10:49 AM",
+        "status": "pending",
+        "full_name": "Susan Brown",
+        "bvn": 8836776106,
+        "gender": "Female",
+        "marital_status": "Single",
+        "children": 1,
+        "residence_type": "Parent’s Apartment",
+        "education_level": "Ph.D",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Agriculture",
+        "duration_of_employment": "2 years",
+        "office_email": "susanbrown@navir.com",
+        "monthly_income": "₦368,977 - ₦830,985",
+        "loan_repayment": "87,573.44",
+        "twitter": "@susan",
+        "facebook": "Susan Brown",
+        "instagram": "@susan",
+        "guarantors": [
+            {
+                "full_name": "Michael Johnson",
+                "phone_number": "+234(903) 664-7976",
+                "relationship": "Brother",
+                "email": "guarantor47a@navir.com"
+            },
+            {
+                "full_name": "Richard Davis",
+                "phone_number": "+234(854) 246-3071",
+                "relationship": "Brother",
+                "email": "guarantor47b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "dms8wg1xb2k",
+        "index": 48,
+        "organization": "Lendstar",
+        "username": "elizabeth",
+        "email": "elizabethdavis@navir.com",
+        "phone_number": "+234(904) 241-7552",
+        "date_joined": "Oct 27 2020, 09:22 AM",
+        "status": "active",
+        "full_name": "Elizabeth Davis",
+        "bvn": 4800080148,
+        "gender": "Male",
+        "marital_status": "Married",
+        "children": "None",
+        "residence_type": "Own Apartment",
+        "education_level": "M.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Agriculture",
+        "duration_of_employment": "2 years",
+        "office_email": "elizabethdavis@navir.com",
+        "monthly_income": "₦192,922 - ₦668,366",
+        "loan_repayment": "69,989.43",
+        "twitter": "@elizabeth",
+        "facebook": "Elizabeth Davis",
+        "instagram": "@elizabeth",
+        "guarantors": [
+            {
+                "full_name": "Joseph Jones",
+                "phone_number": "+234(920) 264-4382",
+                "relationship": "Parent",
+                "email": "guarantor48a@navir.com"
+            },
+            {
+                "full_name": "Robert Martin",
+                "phone_number": "+234(996) 666-6431",
+                "relationship": "Friend",
+                "email": "guarantor48b@navir.com"
+            }
+        ]
+    },
+    {
+        "_id": "r3vlbryfses",
+        "index": 49,
+        "organization": "Irorun",
+        "username": "sarah",
+        "email": "sarahdavis@navir.com",
+        "phone_number": "+234(887) 384-3962",
+        "date_joined": "Aug 23 2025, 05:52 PM",
+        "status": "active",
+        "full_name": "Sarah Davis",
+        "bvn": 8761932155,
+        "gender": "Female",
+        "marital_status": "Single",
+        "children": 3,
+        "residence_type": "Rented Apartment",
+        "education_level": "B.Sc",
+        "employment_status": "Unemployed",
+        "sector_of_employment": "Education",
+        "duration_of_employment": "5 years",
+        "office_email": "sarahdavis@navir.com",
+        "monthly_income": "₦425,890 - ₦801,936",
+        "loan_repayment": "48,706.30",
+        "twitter": "@sarah",
+        "facebook": "Sarah Davis",
+        "instagram": "@sarah",
+        "guarantors": [
+            {
+                "full_name": "Robert Rodriguez",
+                "phone_number": "+234(866) 774-5654",
+                "relationship": "Sister",
+                "email": "guarantor49a@navir.com"
+            },
+            {
+                "full_name": "William Rodriguez",
+                "phone_number": "+234(894) 881-5245",
+                "relationship": "Friend",
+                "email": "guarantor49b@navir.com"
+            }
+        ]
+    }
+]

@@ -1,4 +1,4 @@
-import { Column } from "@tanstack/react-table";
+import { Column, Table } from "@tanstack/react-table";
 
 import { cn } from "@/lib/utils";
 import { IoFilterSharp } from "react-icons/io5";
