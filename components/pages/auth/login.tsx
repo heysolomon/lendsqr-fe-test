@@ -53,9 +53,9 @@ const LoginForm = () => {
     <div className="login-form">
       {/* lendsqr logo */}
       <Image
-        src="/assets/icons/logo.svg"
-        width={173.76}
-        height={36}
+        src="/assets/icons/logo-mark.svg"
+        width={24.75}
+        height={25}
         alt=""
         className="login-form__logo"
       />

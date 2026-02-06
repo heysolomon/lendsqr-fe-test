@@ -5,15 +5,15 @@ import LoginForm from "@/components/pages/auth/login";
 export default function Home() {
   return (
     <main className="login-page">
+      {/* lendsqr logo */}
+      <Image
+        src="/assets/icons/logo.svg"
+        width={173.76}
+        height={36}
+        alt=""
+        className="login-page__logo"
+      />
       <div className="login-page__illustration-container">
-        {/* lendsqr logo */}
-        <Image
-          src="/assets/icons/logo.svg"
-          width={173.76}
-          height={36}
-          alt=""
-          className="login-page__logo"
-        />
         <Image
           src={authIllustration}
           placeholder="blur"
