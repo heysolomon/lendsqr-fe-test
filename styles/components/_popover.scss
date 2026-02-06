@@ -15,7 +15,7 @@
     color: $color-slate-950;
     box-shadow: $shadow-md;
     outline: none;
-    max-height: 60vh;
+    max-height: 40vh;
     overflow-y: auto;
 
     &[data-state="open"] {
