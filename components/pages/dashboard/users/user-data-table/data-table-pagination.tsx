@@ -41,7 +41,7 @@ export function DataTablePagination<TData>({
               ))}
             </SelectContent>
           </Select>
-          <p className="data-table-pagination__text">out of 100</p>
+          <p className="data-table-pagination__text">out of {table.getFilteredRowModel().rows.length}</p>
         </div>
       </div>
 
