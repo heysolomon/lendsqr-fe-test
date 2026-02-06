@@ -1,0 +1,184 @@
+.skeleton {
+    background-color: rgba(#545f7d, 0.15);
+    animation: skeleton-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    border-radius: 4px;
+
+    &--circle {
+        border-radius: 50%;
+    }
+
+    &--rounded {
+        border-radius: 8px;
+    }
+}
+
+@keyframes skeleton-pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+// ==========================================================================
+// Users Page Skeleton
+// ==========================================================================
+
+.users-page-skeleton {
+    &__title {
+        height: 28px;
+        width: 80px;
+        margin-bottom: 20px;
+    }
+
+    &__card {
+        background-color: #ffffff;
+        border: 1px solid rgba(#213f7d, 0.06);
+        border-radius: 4px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__card-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__card-label {
+        height: 14px;
+        width: 80px;
+    }
+
+    &__card-value {
+        height: 24px;
+        width: 60px;
+    }
+
+    &__table {
+        background-color: #ffffff;
+        border: 1px solid rgba(#213f7d, 0.06);
+        border-radius: 4px;
+        padding: 24px;
+        margin-top: 20px;
+    }
+
+    &__table-header {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(#213f7d, 0.1);
+        margin-bottom: 16px;
+    }
+
+    &__table-header-cell {
+        height: 16px;
+        width: 80%;
+    }
+
+    &__table-row {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(#213f7d, 0.06);
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__table-cell {
+        height: 14px;
+        width: 90%;
+    }
+}
+
+// ==========================================================================
+// User Profile Skeleton
+// ==========================================================================
+
+.user-profile-skeleton {
+    &__back-btn {
+        height: 30px;
+        width: 130px;
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        height: 28px;
+        width: 120px;
+    }
+
+    &__action-btn {
+        height: 40px;
+        width: 130px;
+        border-radius: 8px;
+    }
+
+    &__avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__name {
+        height: 24px;
+        width: 150px;
+        margin-bottom: 8px;
+    }
+
+    &__id {
+        height: 14px;
+        width: 100px;
+    }
+
+    &__tier-label {
+        height: 14px;
+        width: 70px;
+        margin-bottom: 8px;
+    }
+
+    &__stars {
+        height: 16px;
+        width: 60px;
+    }
+
+    &__amount {
+        height: 24px;
+        width: 120px;
+        margin-bottom: 8px;
+    }
+
+    &__bank-details {
+        height: 14px;
+        width: 150px;
+    }
+
+    &__nav-item {
+        height: 20px;
+        width: 100px;
+    }
+
+    &__section-title {
+        height: 20px;
+        width: 180px;
+        margin-bottom: 20px;
+    }
+
+    &__label {
+        height: 12px;
+        width: 80px;
+        margin-bottom: 8px;
+    }
+
+    &__value {
+        height: 16px;
+        width: 120px;
+    }
+}

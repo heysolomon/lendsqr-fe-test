@@ -9,6 +9,7 @@ import userWithSavingsIcon from "@/public/assets/icons/users-with-savings-icon.s
 import { DataTable } from "@/components/pages/dashboard/users/user-data-table/data-table";
 import { columns } from "@/components/pages/dashboard/users/user-data-table/columns";
 import { getUsers, User } from "@/lib/api";
+import { UsersPageSkeleton } from "@/components/pages/dashboard/users/users-page-skeleton";
 
 const Page = () => {
   const [users, setUsers] = useState<User[]>([]);
@@ -30,7 +31,7 @@ const Page = () => {
   }, []);
 
   if (loading) {
-    return <div className="users-page__loading">Loading users...</div>;
+    return <UsersPageSkeleton />;
   }
 
   return (

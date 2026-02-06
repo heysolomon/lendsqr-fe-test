@@ -10,6 +10,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { MdOutlineStarOutline } from "react-icons/md";
 import { User, getUserByUsername } from "@/lib/api";
 import { UserProvider } from "@/components/pages/dashboard/users/user-context";
+import { UserProfileSkeleton } from "@/components/pages/dashboard/users/user-profile-skeleton";
 
 const Layout = ({
   params,
@@ -83,7 +84,7 @@ const Layout = ({
   ];
 
   if (loading) {
-    return <div className="user-profile-layout__loading">Loading profile...</div>;
+    return <UserProfileSkeleton />;
   }
 
   if (!user) {
