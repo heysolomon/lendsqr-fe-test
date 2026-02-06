@@ -16,8 +16,10 @@ function Calendar({
   className,
   classNames,
   showOutsideDays = true,
-  captionLayout = "label",
+  captionLayout = "dropdown",
   buttonVariant = "ghost",
+  startMonth = new Date(1900, 0),
+  endMonth = new Date(new Date().getFullYear(), 11),
   locale,
   formatters,
   components,
@@ -32,6 +34,8 @@ function Calendar({
       showOutsideDays={showOutsideDays}
       className={cn("calendar", className)}
       captionLayout={captionLayout}
+      startMonth={startMonth}
+      endMonth={endMonth}
       locale={locale}
       formatters={{
         formatMonthDropdown: (date) =>
