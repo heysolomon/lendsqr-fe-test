@@ -14,7 +14,7 @@
     background-color: $color-bg-primary;
     font-family: $font-work-sans;
 
-    @include md {
+    @media (min-width: $breakpoint-custom-sidebar) {
         grid-template-columns: 220px 1fr;
     }
 
@@ -138,9 +138,9 @@
 }
 
 .dashboard-layout__user-name {
-    display: none; // Hidden by default on very small screens (< 414px)
+    display: none; // Hidden by default on very small screens (< 459px)
 
-    @media (min-width: 414px) {
+    @media (min-width: 459px) {
         display: block;
     }
 }
@@ -148,7 +148,7 @@
 .dashboard-layout__user-icon {
     display: none;
 
-    @media (min-width: 414px) {
+    @media (min-width: 459px) {
         display: block;
     }
 }
@@ -178,7 +178,7 @@
         background-color: transparent;
     }
 
-    @include md {
+    @media (min-width: $breakpoint-custom-sidebar) {
         display: none;
     }
 }

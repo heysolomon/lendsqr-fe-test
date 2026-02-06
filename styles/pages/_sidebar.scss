@@ -9,7 +9,7 @@
     display: none;
     background-color: $color-bg-white;
 
-    @include md {
+    @media (min-width: $breakpoint-custom-sidebar) {
         display: block;
     }
 }
