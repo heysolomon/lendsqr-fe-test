@@ -56,12 +56,12 @@ export function DataTableColumnHeader<TData, TValue>({
   const form = useForm<z.infer<typeof FilterSchema>>({
     resolver: zodResolver(FilterSchema),
     defaultValues: {
-      organization: "",
-      username: "",
-      email: "",
-      date: undefined,
-      phone_number: "",
-      status: "",
+      organization: (table.getColumn("organization")?.getFilterValue() as string) || "",
+      username: (table.getColumn("username")?.getFilterValue() as string) || "",
+      email: (table.getColumn("email")?.getFilterValue() as string) || "",
+      date: (table.getColumn("date_joined")?.getFilterValue() as Date) || undefined,
+      phone_number: (table.getColumn("phone_number")?.getFilterValue() as string) || "",
+      status: (table.getColumn("status")?.getFilterValue() as string) || "",
     },
   });
 
@@ -89,13 +89,6 @@ export function DataTableColumnHeader<TData, TValue>({
 
     // Filter by date
     if (values.date) {
-      // Assuming the table data is a string or date object. If string, we might need formatting.
-      // For strict equality or smart filtering, just passing the date object might work if the filterFn handles it.
-      // Or format it to string if the data is a string.
-      // Let's assume standard date filtering or exact match for now.
-      // Ideally we would filter for a range or "on this day".
-      // Let's try passing the raw value first, or maybe formatted string if the column is string.
-      // The column accessor is "date_joined".
       table.getColumn("date_joined")?.setFilterValue(values.date);
     } else {
       table.getColumn("date_joined")?.setFilterValue(undefined);
