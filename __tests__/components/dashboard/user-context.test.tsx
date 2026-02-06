@@ -63,6 +63,9 @@ describe('UserContext', () => {
             return <div>{user ? 'User exists' : 'User is undefined'}</div>;
         };
 
+        // Prevent console.error from cluttering the output
+        const consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => { });
+
         // Even if user is undefined in prop, the provider provides it.
         // But our useUser throws if the context value is undefined.
         // Let's test that specifically.
@@ -73,5 +76,7 @@ describe('UserContext', () => {
                 </UserProvider>
             );
         }).toThrow('useUser must be used within a UserProvider');
+
+        consoleSpy.mockRestore();
     });
 });

@@ -79,10 +79,10 @@ describe('UserProfileSkeleton Component', () => {
             expect(labels.length).toBe(values.length);
         });
 
-        it('should have padding-bottom on header card', () => {
+        it('should have skeleton modifier class on header card', () => {
             render(<UserProfileSkeleton />);
             const headerCard = document.querySelector('.user-header-card');
-            expect(headerCard).toHaveStyle({ paddingBottom: '40px' });
+            expect(headerCard).toHaveClass('user-header-card--skeleton');
         });
     });
 
