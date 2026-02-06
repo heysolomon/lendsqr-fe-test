@@ -8,7 +8,7 @@
   <h3 align="center">Lendsqr Test</h3>
 
   <p align="center">
-   This is a front-end developer test for a role at Lendsqr. The task is translating Figma designs(4 screens) into fully responsive websites. Lendsqr is the best loan management system for smart lenders. 
+   This is a front-end engineer test for a role at Lendsqr. The task is translating Figma designs(4 screens) into fully responsive websites. Lendsqr is the best loan management system for smart lenders. 
     <br />
     <a href="https://github.com/heysolomon/lendsqr-fe-test/"><strong>Explore the docs »</strong></a>
     <br />
