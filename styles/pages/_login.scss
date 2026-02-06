@@ -98,10 +98,16 @@
 
 .login-form__form {
     &>*+* {
-        margin-top: $spacing-8;
+        margin-top: $spacing-5;
     }
 
     width: 80%;
+
+    @include md {
+        &>*+* {
+            margin-top: $spacing-8;
+        }
+    }
 }
 
 .login-form__input {
