@@ -40,8 +40,10 @@
 * [SCSS](https://sass-lang.com/)
 * [Radix UI](https://www.radix-ui.com/)
 * [React Hook Form](https://react-hook-form.com/)
-* [React query](https://tanstack.com/query/latest)
+* [React Query](https://tanstack.com/query/latest)
 * [Zod](https://zod.dev/)
+* [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+* [jest-axe](https://github.com/nickcolley/jest-axe) (Accessibility Testing)
 
 <!-- Getting Started -->
 ## Getting Started
@@ -77,6 +79,20 @@ _Below are steps to follow in setting up the project._
    ```sh
    pnpm run dev
    ```
+
+### Running Tests
+
+To run the automated tests, use:
+
+```sh
+pnpm test
+```
+
+For a full production build:
+
+```sh
+pnpm build
+```
    
 ### How to view the pages done
 
