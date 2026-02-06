@@ -77,6 +77,7 @@ const LoginForm = () => {
                 <FormControl>
                   <Input
                     placeholder="Email"
+                    aria-label="Email"
                     className="login-form__input"
                     {...field}
                   />
@@ -95,6 +96,7 @@ const LoginForm = () => {
                 <FormControl>
                   <PasswordInput
                     placeholder="Password"
+                    aria-label="Password"
                     field={field}
                     className="login-form__input"
                   />

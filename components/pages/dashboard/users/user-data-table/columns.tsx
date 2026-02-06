@@ -101,6 +101,7 @@ export const columns: ColumnDef<User>[] = [
   },
   {
     id: "actions",
+    header: () => <span className="sr-only">Actions</span>,
     cell: ({ row }) => <DataTableRowActions row={row} />,
   },
 ];

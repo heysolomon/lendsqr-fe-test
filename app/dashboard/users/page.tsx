@@ -37,6 +37,7 @@ const Page = () => {
   return (
     <div className="users-page">
       <h1 className="users-page__title">Users</h1>
+      <h2 className="sr-only">User Statistics</h2>
       <div className="users-stats-grid">
         {/* users */}
         <UserInfoCard
