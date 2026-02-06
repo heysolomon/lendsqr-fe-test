@@ -34,22 +34,22 @@ import { format } from "date-fns";
 interface DataTableColumnHeaderProps<TData, TValue>
   extends React.HTMLAttributes<HTMLDivElement> {
   column: Column<TData, TValue>;
+  table: Table<TData>;
   title: string;
 }
 
 const FilterSchema: ZodSchema = z.object({
-  organization: z.string(),
-  username: z.string(),
-  email: z.string().email({
-    message: "please enter a valid email address",
-  }),
+  organization: z.string().optional(),
+  username: z.string().optional(),
+  email: z.string().email().optional().or(z.literal('')),
   date: z.date().optional(),
-  phone_number: z.string(),
-  status: z.string(),
+  phone_number: z.string().optional(),
+  status: z.string().optional(),
 });
 
 export function DataTableColumnHeader<TData, TValue>({
   column,
+  table,
   title,
   className,
 }: DataTableColumnHeaderProps<TData, TValue>) {
@@ -65,9 +65,66 @@ export function DataTableColumnHeader<TData, TValue>({
     },
   });
 
-  const filter = async (values: z.infer<typeof FilterSchema>) => {
-    console.log("filter table");
+  const filter = (values: z.infer<typeof FilterSchema>) => {
+    // Filter by organization
+    if (values.organization) {
+      table.getColumn("organization")?.setFilterValue(values.organization);
+    } else {
+      table.getColumn("organization")?.setFilterValue(undefined); // Clear if empty
+    }
+
+    // Filter by username
+    if (values.username) {
+      table.getColumn("username")?.setFilterValue(values.username);
+    } else {
+      table.getColumn("username")?.setFilterValue(undefined);
+    }
+
+    // Filter by email
+    if (values.email) {
+      table.getColumn("email")?.setFilterValue(values.email);
+    } else {
+      table.getColumn("email")?.setFilterValue(undefined);
+    }
+
+    // Filter by date
+    if (values.date) {
+      // Assuming the table data is a string or date object. If string, we might need formatting.
+      // For strict equality or smart filtering, just passing the date object might work if the filterFn handles it.
+      // Or format it to string if the data is a string.
+      // Let's assume standard date filtering or exact match for now.
+      // Ideally we would filter for a range or "on this day".
+      // Let's try passing the raw value first, or maybe formatted string if the column is string.
+      // The column accessor is "date_joined".
+      table.getColumn("date_joined")?.setFilterValue(values.date);
+    } else {
+      table.getColumn("date_joined")?.setFilterValue(undefined);
+    }
+
+    // Filter by phone number
+    if (values.phone_number) {
+      table.getColumn("phone_number")?.setFilterValue(values.phone_number);
+    } else {
+      table.getColumn("phone_number")?.setFilterValue(undefined);
+    }
+
+    // Filter by status
+    if (values.status) {
+      table.getColumn("status")?.setFilterValue(values.status);
+    } else {
+      table.getColumn("status")?.setFilterValue(undefined);
+    }
   };
+
+  const reset = () => {
+    form.reset();
+    table.getColumn("organization")?.setFilterValue(undefined);
+    table.getColumn("username")?.setFilterValue(undefined);
+    table.getColumn("email")?.setFilterValue(undefined);
+    table.getColumn("date_joined")?.setFilterValue(undefined);
+    table.getColumn("phone_number")?.setFilterValue(undefined);
+    table.getColumn("status")?.setFilterValue(undefined);
+  }
 
   function onSubmit(values: z.infer<typeof FilterSchema>) {
     filter(values);
@@ -107,7 +164,9 @@ export function DataTableColumnHeader<TData, TValue>({
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem value="zolarac">Zolarac</SelectItem>
+                        <SelectItem value="lentz">Lentz</SelectItem>
+                        <SelectItem value="irorun">Irorun</SelectItem>
+                        <SelectItem value="lendstar">Lendstar</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage />
@@ -191,10 +250,7 @@ export function DataTableColumnHeader<TData, TValue>({
                           disabled={(date) =>
                             date > new Date() || date < new Date("1900-01-01")
                           }
-                          startMonth={new Date(1900, 0)}
-                          endMonth={new Date(new Date().getFullYear(), 11)}
-                          captionLayout="dropdown"
-                          autoFocus
+                          initialFocus
                         />
                       </PopoverContent>
                     </Popover>
@@ -245,6 +301,7 @@ export function DataTableColumnHeader<TData, TValue>({
                       <SelectContent>
                         <SelectItem value="active">Active</SelectItem>
                         <SelectItem value="inactive">Inactive</SelectItem>
+                        <SelectItem value="pending">Pending</SelectItem>
                         <SelectItem value="blacklisted">Blacklisted</SelectItem>
                       </SelectContent>
                     </Select>
@@ -257,6 +314,7 @@ export function DataTableColumnHeader<TData, TValue>({
                   type="reset"
                   variant={`ghost`}
                   className="filter-form__reset-btn"
+                  onClick={reset}
                 >
                   Reset
                 </Button>

@@ -12,8 +12,8 @@ import Link from "next/link";
 export const columns: ColumnDef<User>[] = [
   {
     accessorKey: "organization",
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Organization" />
+    header: ({ column, table }) => (
+      <DataTableColumnHeader column={column} table={table} title="Organization" />
     ),
     cell: ({ row }) => {
       return (
@@ -30,8 +30,8 @@ export const columns: ColumnDef<User>[] = [
   },
   {
     accessorKey: "username",
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="username" />
+    header: ({ column, table }) => (
+      <DataTableColumnHeader column={column} table={table} title="username" />
     ),
     cell: ({ row }) => {
       return <div className="data-table__cell-content">{row.getValue("username")}</div>;
@@ -39,8 +39,8 @@ export const columns: ColumnDef<User>[] = [
   },
   {
     accessorKey: "email",
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="email" />
+    header: ({ column, table }) => (
+      <DataTableColumnHeader column={column} table={table} title="email" />
     ),
     cell: ({ row }) => {
       return <div className="data-table__cell-content">{row.getValue("email")}</div>;
@@ -48,8 +48,8 @@ export const columns: ColumnDef<User>[] = [
   },
   {
     accessorKey: "phone_number",
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="phone number" />
+    header: ({ column, table }) => (
+      <DataTableColumnHeader column={column} table={table} title="phone number" />
     ),
     cell: ({ row }) => {
       return <div className="data-table__cell-content data-table__cell-content--nowrap">{row.getValue("phone_number")}</div>;
@@ -57,8 +57,8 @@ export const columns: ColumnDef<User>[] = [
   },
   {
     accessorKey: "date_joined",
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="date joined" />
+    header: ({ column, table }) => (
+      <DataTableColumnHeader column={column} table={table} title="date joined" />
     ),
     cell: ({ row }) => {
       return <div className="data-table__cell-content data-table__cell-content--nowrap">{row.getValue("date_joined")}</div>;
@@ -66,8 +66,8 @@ export const columns: ColumnDef<User>[] = [
   },
   {
     accessorKey: "status",
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Status" />
+    header: ({ column, table }) => (
+      <DataTableColumnHeader column={column} table={table} title="Status" />
     ),
     cell: ({ row }) => {
       const status = statuses.find(

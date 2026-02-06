@@ -64,7 +64,7 @@
 
 .select__content {
     position: relative;
-    z-index: $z-index-dropdown;
+    z-index: $z-index-tooltip; // Was $z-index-dropdown (50), increased to 400 to sit above popovers (300)
     max-height: 24rem;
     min-width: 8rem;
     overflow: hidden;
